@@ -8,6 +8,8 @@ MigrationGuard plugin.
 ## 1. Support Channels
 
 - Primary channel: https://product.moonlaboratories.com/support
+- For purchases, renewals, cancellations, invoices, and refunds, use JetBrains
+  Marketplace or your JetBrains Account support channel.
 - Please include: IDE version, plugin version, operating system, and clear
   reproduction steps.
 
@@ -17,7 +19,8 @@ Support covers:
 
 - installation and activation issues;
 - local Flyway SQL scanning and finding navigation;
-- Marketplace license activation issues for paid features, when available;
+- plugin behavior after trial, activation, renewal, expiration, or fallback
+  license changes for paid features, when available;
 - reproducible bugs and regressions in released versions.
 
 Support does not include:
@@ -29,7 +32,9 @@ Support does not include:
 
 ## 3. Eligibility
 
-- Paid subscribers receive standard commercial support.
+- Paid subscribers with an active subscription receive standard commercial
+  technical support. Users with a fallback license receive support for the
+  covered version on a best-effort basis.
 - Trial users may receive best-effort support.
 - Free or read-only tiers (if offered) are handled on a best-effort basis.
 

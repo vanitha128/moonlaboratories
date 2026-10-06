@@ -1,5 +1,5 @@
 MigrationGuard End User License Agreement (EULA)
-Version 1.0
+Version 1.1
 Last Updated: 2026-10-07
 
 IMPORTANT: PLEASE READ THIS AGREEMENT CAREFULLY. BY INSTALLING, COPYING,
@@ -31,6 +31,21 @@ applicable Marketplace purchase.
 If offered, a trial permits time-limited use of Pro features. After the trial,
 Pro features require a paid license; free features remain available.
 
+2.4 Subscriptions
+Pro subscriptions may be monthly or annual, as shown at checkout and in your
+JetBrains purchase confirmation. Pro access is subject to the subscription
+period, license status, and seat limits shown by JetBrains. Manage renewal and
+cancellation through your JetBrains Account or the applicable reseller. If a
+subscription expires without renewal, current Pro access ends; free features
+remain available.
+
+2.5 Fallback License
+If your JetBrains purchase confirmation grants a fallback license, you may
+continue using the version covered by that confirmation after subscription
+expiry, subject to its stated conditions and this Agreement. A fallback
+license does not grant access to later Pro versions. This section does not
+create a fallback right where none is included in the purchase confirmation.
+
 3. OWNERSHIP
 The Software is licensed, not sold. Licensor and its licensors retain all
 right, title, and interest in and to the Software, including all intellectual
@@ -54,14 +69,16 @@ technical protection measures;
 party right.
 
 5. SUPPORT AND UPDATES
-Licensor may, but is not obligated to, provide maintenance, support, patches,
-or updates. If provided, they are part of the Software and governed by this
-Agreement unless accompanied by separate terms.
+Licensor provides technical support as described in the MigrationGuard Support
+Policy. Updates may be delivered in patch or later releases. Any update or
+upgrade we provide is part of the Software and governed by this Agreement
+unless accompanied by separate terms.
 
 6. THIRD-PARTY SERVICES
-Licensing and billing may use JetBrains Marketplace infrastructure. Your use of
-those services is governed by their terms and privacy policies. Licensor is not
-responsible for third-party services.
+Licensing and billing may use JetBrains Marketplace infrastructure. JetBrains
+acts as a reseller for Marketplace purchases and is not a party to this
+Agreement between you and Moon Laboratories. Your use of JetBrains services is
+governed by its terms and privacy policies.
 
 7. DATA AND PRIVACY
 The Software analyzes Flyway SQL files locally in your IDE. It does not require
@@ -69,10 +86,11 @@ database credentials or upload migration contents to Moon Laboratories.
 See the MigrationGuard Privacy Policy for more detail.
 
 8. FEES, PAYMENTS, AND TAXES
-Paid licenses are billed through JetBrains Marketplace or other authorized
-channels. Fees are non-refundable except as required by applicable law or the
-applicable marketplace policy. You are responsible for applicable taxes, duties,
-and governmental charges.
+Paid subscriptions are sold and billed through JetBrains Marketplace or an
+authorized reseller. JetBrains or the reseller handles checkout, renewal,
+cancellation, refunds, and applicable sales taxes under the terms shown at
+purchase. Refund requests for Marketplace purchases follow JetBrains' refund
+policy. Your own tax obligations remain your responsibility where applicable.
 
 9. TERM AND TERMINATION
 9.1 Term

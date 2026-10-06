@@ -40,6 +40,14 @@ Your use of JetBrains Marketplace and IDE services is governed by JetBrains'
 terms and privacy policy. We are not responsible for third-party privacy or
 security practices.
 
+For a paid subscription or trial, JetBrains handles account registration,
+license management, payment details, renewals, cancellations, and refunds.
+The Plugin may read the license status provided by the IDE to enable Pro
+features; it does not receive payment card details. JetBrains may make
+purchase or license information available to Moon Laboratories through its
+vendor systems for sales records and support. We use any such information
+only for those purposes and applicable legal obligations.
+
 ## 6. Logs and Diagnostics
 
 The current scanner does not add analytics or upload diagnostic logs. Your IDE
@@ -57,6 +65,9 @@ IDE files and logs remain subject to your local settings and system policies.
 
 Support emails and attachments are retained only as long as reasonably
 necessary for support, legal compliance, and record-keeping.
+Marketplace purchase and license records are retained by JetBrains under its
+own policies; records available to us through vendor systems are retained as
+needed for support, accounting, and legal obligations.
 
 ## 8. Security
 
