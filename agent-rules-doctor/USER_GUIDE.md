@@ -55,7 +55,7 @@ Select **User guide** to open this page in your browser. The plugin does not inc
 - **Health** shows the score, coverage, finding counts, and top findings. Select a top finding and then select **View finding** to see its details.
 - **Files** lists each scanned instruction file with a score and finding count. Select a file to see its findings. Select **Show findings** to filter the Findings view to that file. Select **Open file** to open it in the editor.
 - **Findings** shows the finding list, evidence, and suggested action.
-- **Duplicates & conflicts** shows repeated or conflicting instructions. Select a finding to compare its current source line with the related evidence. Select **Open source** to inspect the line in the editor. This view has results only when a Pro license is active.
+- **Duplicates & conflicts** shows repeated or conflicting instructions. Select a finding to compare the scanned source line with related evidence. Select **Open source** to inspect the file in the editor. Select **Rescan** after you change the file. This view has results only when a Pro license is active.
 - **Settings** shows license status, available checks, and the local ignore settings file. Select **Create ignore file** if the file does not exist. Select **Open ignore file** to edit an existing file.
 
 The score for one file uses findings that point to that file. The project score uses all findings available with your license.
