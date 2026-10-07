@@ -18,7 +18,7 @@ You can also open the [FeatureFlagPro Marketplace page](https://plugins.jetbrain
 ## 1. Find flags in your project
 
 1. Open your project in the IDE.
-2. Select **Feature Flags** on the left tool window bar. The tool window opens at the bottom of the IDE.
+2. Select **Feature Flags** on the tool window bar at the bottom of the IDE.
 3. Wait for the project scan to finish. The table then shows the detected flags.
 
 The plugin scans the project when you open it. It also scans a file after you save it. Select **Rescan** to scan the project again.
