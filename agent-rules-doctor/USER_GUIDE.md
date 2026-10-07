@@ -69,6 +69,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 | --- | --- | --- |
 | Missing path | `MISSING_PATH` | A supported literal relative path in a code span or Markdown link does not exist. |
 | Missing npm script | `MISSING_NPM_SCRIPT` | An `npm run NAME` command names no script in a nearby `package.json`. |
+| Undeclared npm dependency | `UNDECLARED_NPM_DEPENDENCY` | An instruction explicitly says that `package.json` lists a package as a dependency, but the nearest manifest does not list it. |
 | Missing build wrapper | `MISSING_BUILD_WRAPPER` | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
 | Unknown Maven phase | `UNKNOWN_MAVEN_PHASE` | A simple quoted `mvn` or `./mvnw` command names a phase that Maven does not provide. The check needs a nearby `pom.xml`. |
 | Java version mismatch | `JAVA_VERSION_MISMATCH` | An explicit Java or JDK major version differs from an unambiguous project setting. |
@@ -79,6 +80,8 @@ The scanner skips build output, dependencies, and other generated folders. It do
 | Repeated context | `DUPLICATE_CONTEXT` | A substantial paragraph appears in two supported files. The finding includes a rough estimate of repeated tokens. |
 | Conflicting directive | `CONFLICTING_DIRECTIVE` | Files in one folder say `Always ACTION` and `Never ACTION` for the same exact action. |
 | Invalid ignore entry | `INVALID_IGNORE_ENTRY` | An ignore setting contains an unknown rule, file, or instruction. |
+
+The npm dependency check uses explicit statements such as ``package.json lists `react` as a dependency``. It reads the nearest `package.json`. It does not treat an instruction to install a package as a claim that the package is already declared.
 
 The Java check reads a root Gradle toolchain, Maven compiler release, or `.java-version`. The Node check reads a root `.nvmrc` or `.node-version`. The Python check reads a root `.python-version`.
 
