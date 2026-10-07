@@ -27,6 +27,10 @@ processes instruction text and referenced paths in the IDE to identify stale
 references and show findings. It does not ask for account credentials or create a
 Moon Laboratories account.
 
+The scan does not change project files. If you select **Create ignore file** in
+Settings, the Plugin creates `.agentrules-doctor-ignore` in the project root.
+You can edit or delete that file in your IDE.
+
 ## 4. Network Calls
 
 The current scanner does not send project files, instruction text, or findings over the

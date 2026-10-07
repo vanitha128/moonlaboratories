@@ -28,15 +28,25 @@ The status line shows **Pro active** when the IDE confirms Pro access. If you ac
 1. Open a local project in IntelliJ IDEA.
 2. Select **View > Tool Windows > Agent Rules**.
 3. Wait for the scan to finish.
-4. Read the status line. It shows the score, file count, and finding count.
+4. Read the **Health** view. It shows the score, file count, and finding count.
 
-The first scan starts when you open the tool window. Select **Rescan** after you change an instruction file or an ignore setting. The plugin reads files during a scan. It does not change files or run project commands.
+The first scan starts when you open the tool window. Select **Rescan** after you change an instruction file or an ignore setting. The plugin reads files during a scan. It does not change files or run project commands during the scan.
 
 Select **User guide** to open this page in your browser. The plugin does not include project files in the link.
 
+## Use the views
+
+- **Health** shows the score, coverage, finding counts, and top findings. Select a top finding and then select **View finding** to see its details.
+- **Files** lists each scanned instruction file with a score and finding count. Select a file to see its findings. Select **Show findings** to filter the Findings view to that file. Select **Open file** to open it in the editor.
+- **Findings** shows the finding list, evidence, and suggested action.
+- **Duplicates & conflicts** shows repeated or conflicting instructions. Select a finding to compare its current source line with the related evidence. Select **Open source** to inspect the line in the editor. This view has results only when a Pro license is active.
+- **Settings** shows license status, available checks, and the local ignore settings file. Select **Create ignore file** if the file does not exist. Select **Open ignore file** to edit an existing file.
+
+The score for one file uses findings that point to that file. The project score uses all findings available with your license.
+
 ## Read a finding
 
-1. Select a finding in the list.
+1. Select **Findings**, then select a finding in the list.
 2. Read the evidence and the suggested action below the list.
 3. Select **Open source** to open the source file. You can also double-click the finding.
 4. Check the instruction and the project configuration.
@@ -46,7 +56,7 @@ The plugin does not make the correction for you. Keep a copy of your files befor
 
 ## Filter findings
 
-Use **All files** to show findings from one instruction file. Select **All files** again to show findings from every scanned file. The menu lists each file by its path in your project.
+In **Findings**, use **All files** to show findings from one instruction file. Select **All files** again to show findings from every scanned file. The menu lists each file by its path in your project.
 
 Use the other menu to select **All findings**, **Errors**, **Warnings**, or **Info**. You can use both menus together.
 
@@ -104,7 +114,7 @@ The score uses active findings from the scan. It is a summary of these checks. A
 
 ## Ignore a known false positive
 
-Create `.agentrules-doctor-ignore` in the project root. Use one setting on each line. Use `#` at the start of a line for a comment.
+In **Settings**, select **Create ignore file**. The plugin creates `.agentrules-doctor-ignore` in the project root and opens it in the editor. You can also create this file yourself. Use one setting on each line. Use `#` at the start of a line for a comment.
 
 ```text
 # Ignore one rule in this project.
