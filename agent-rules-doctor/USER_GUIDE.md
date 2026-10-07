@@ -121,7 +121,7 @@ The npm checks read the top-level sections of a valid `package.json`. If the fil
 
 The Maven dependency check uses explicit statements such as ``pom.xml lists `org.example:example-lib` as a dependency``. It reads the nearest `pom.xml`. It skips a POM that it cannot read or that uses a property in a dependency name.
 
-The path check skips fenced examples, lines marked as examples or conventions, package imports, path aliases, image tags, and unqualified directory names. For a Cursor rule with one clear file scope, it also checks paths from that scoped folder. If you open a parent folder that contains several separate projects, open each project at its own root for more accurate path results.
+The path check skips fenced examples, lines marked as examples or conventions, package imports, path aliases, image tags, and unqualified directory names. For a Cursor rule with one clear file scope, it also checks paths from that scoped folder. A parent folder can contain several separate projects. For more accurate path results, open each project at its own root.
 
 The Java check reads a root Gradle toolchain, Maven compiler release, or `.java-version`. The Node check reads a root `.nvmrc` or `.node-version`. The Python check reads a root `.python-version`.
 
