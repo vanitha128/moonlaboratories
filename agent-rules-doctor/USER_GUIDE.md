@@ -78,15 +78,16 @@ The scanner skips build output, dependencies, and other generated folders. It do
 
 ## Checks in this build
 
-| Check | What the plugin reports |
-| --- | --- |
-| Missing path | A literal relative path in a code span or Markdown link does not exist. |
-| Missing npm script | An `npm run NAME` command names no script in a nearby `package.json`. |
-| Missing build wrapper | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
-| Java version mismatch | An explicit Java or JDK major version differs from an unambiguous project setting. |
-| Node version mismatch | An explicit Node major version differs from `.nvmrc` or `.node-version`. |
-| Repeated directive | The same instruction appears in two supported files after basic text normalization. |
-| Conflicting directive | Files in one folder say `Always ACTION` and `Never ACTION` for the same exact action. |
+| Check | Rule ID | What the plugin reports |
+| --- | --- | --- |
+| Missing path | `MISSING_PATH` | A supported literal relative path in a code span or Markdown link does not exist. |
+| Missing npm script | `MISSING_NPM_SCRIPT` | An `npm run NAME` command names no script in a nearby `package.json`. |
+| Missing build wrapper | `MISSING_BUILD_WRAPPER` | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
+| Java version mismatch | `JAVA_VERSION_MISMATCH` | An explicit Java or JDK major version differs from an unambiguous project setting. |
+| Node version mismatch | `NODE_VERSION_MISMATCH` | An explicit Node major version differs from `.nvmrc` or `.node-version`. |
+| Repeated directive | `DUPLICATE_DIRECTIVE` | The same instruction appears in two supported files after basic text normalization. |
+| Conflicting directive | `CONFLICTING_DIRECTIVE` | Files in one folder say `Always ACTION` and `Never ACTION` for the same exact action. |
+| Invalid ignore entry | `INVALID_IGNORE_ENTRY` | An ignore setting contains an unknown rule, file, or instruction. |
 
 The Java check reads a root Gradle toolchain, Maven compiler release, or `.java-version`. The Node check reads a root `.nvmrc` or `.node-version`.
 
@@ -148,3 +149,13 @@ The scan runs on your computer. The plugin does not send instruction text or fin
 Use the [support page](SUPPORT.md) for product help. The [license draft](LICENSE) describes proposed legal terms. Moon Laboratories will finalize these documents before Marketplace release.
 
 JetBrains Marketplace will handle sales and license delivery if Moon Laboratories releases paid features. This development build has no purchase flow and no paid license check.
+
+## Development status
+
+On 2026-10-07, local tests and ZIP packaging passed. JetBrains Plugin Verifier reported compatibility with IntelliJ IDEA 2025.3.6.1.
+
+The verifier also reported four deprecated API usages and six experimental API usages. These results apply to the tested IDE version only.
+
+The Agent Rules tool window showed five sample findings and a 56/100 score. This test did not confirm every filter, Rescan, or source navigation action.
+
+Paid licensing, broader IDE tests, final legal terms, and Marketplace submission are not complete.
