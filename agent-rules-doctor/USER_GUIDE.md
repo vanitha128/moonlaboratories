@@ -70,6 +70,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 | Missing path | `MISSING_PATH` | A supported literal relative path in a code span or Markdown link does not exist. |
 | Missing npm script | `MISSING_NPM_SCRIPT` | An `npm run NAME` command names no script in a nearby `package.json`. |
 | Missing build wrapper | `MISSING_BUILD_WRAPPER` | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
+| Unknown Maven phase | `UNKNOWN_MAVEN_PHASE` | A simple quoted `mvn` or `./mvnw` command names a phase that Maven does not provide. The check needs a nearby `pom.xml`. |
 | Java version mismatch | `JAVA_VERSION_MISMATCH` | An explicit Java or JDK major version differs from an unambiguous project setting. |
 | Node version mismatch | `NODE_VERSION_MISMATCH` | An explicit Node major version differs from `.nvmrc` or `.node-version`. |
 | Python version mismatch | `PYTHON_VERSION_MISMATCH` | An explicit Python major or minor version differs from `.python-version`. |
@@ -80,7 +81,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 
 The Java check reads a root Gradle toolchain, Maven compiler release, or `.java-version`. The Node check reads a root `.nvmrc` or `.node-version`. The Python check reads a root `.python-version`.
 
-The token estimate uses four characters per token. Actual token counts vary. The plugin reports only matches that it can check with local project data. It does not understand all natural-language instructions.
+The token estimate uses four characters per token. Actual token counts vary. The Maven check does not inspect commands with options or plugin goals. The plugin reports only matches that it can check with local project data. It does not understand all natural-language instructions.
 
 ## Understand the score
 
