@@ -31,10 +31,22 @@ The scan does not change project files. If you select **Create ignore file** in
 Settings, the Plugin creates `.agentrules-doctor-ignore` in the project root.
 You can edit or delete that file in your IDE.
 
+The support form is separate from the Plugin scan. If you submit a support
+request, Moon Laboratories receives your name, contact email, selected
+product, description, and submission time. We store these fields to review
+and answer your request. Do not include secrets or private project content.
+Remove sensitive details from any screenshot or log that you share for support.
+
 ## 4. Network Calls
 
 The scan makes no network request. If you select **User guide**, the Plugin opens
 the guide in your browser.
+
+The support form loads Google reCAPTCHA to limit spam and abuse. Your browser
+contacts Google for this check. Our support service sends the reCAPTCHA
+response token and, when available, your IP address to Google's verification
+service. reCAPTCHA sets a cookie for this check. The support submission table
+does not store the response token.
 
 JetBrains may handle plugin download, updates, licensing, and billing under its
 own terms and privacy policy. The IDE may use JetBrains platform services
@@ -47,6 +59,9 @@ We do not sell personal data.
 Your use of JetBrains Marketplace and IDE services is governed by JetBrains'
 terms and privacy policy. We are not responsible for third-party privacy or
 security practices.
+
+The support form uses Google reCAPTCHA for security, fraud, and abuse
+prevention. The Plugin's local scan does not use reCAPTCHA.
 
 For a paid subscription or trial, JetBrains handles account registration,
 license management, payment details, renewals, cancellations, and refunds.
@@ -71,8 +86,8 @@ Scanned instructions remain in your project. Findings are held in the open IDE s
 the current Plugin does not maintain a separate database of scanned instructions.
 IDE files and logs remain subject to your local settings and system policies.
 
-Support emails and attachments are retained only as long as reasonably
-necessary for support, legal compliance, and record-keeping.
+Support form submissions, emails, and attachments are retained only as long
+as reasonably necessary for support, legal compliance, and record-keeping.
 Marketplace purchase and license records are retained by JetBrains under its
 own policies; records available to us through vendor systems are retained as
 needed for support, accounting, and legal obligations.
@@ -103,5 +118,5 @@ published with the Plugin materials or product documentation.
 
 For privacy questions or requests, contact:
 
-- Raise support request in https://product.moonlaboratories.com/support
+- Raise a support request at https://product.moonlaboratories.com/support
 - Vendor: Moon Laboratories
