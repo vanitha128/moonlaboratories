@@ -46,7 +46,7 @@ If activation fails, check that you use the correct JetBrains Account. For purch
 3. Wait for the scan to finish.
 4. Read the **Health** view. It shows the score, file count, and finding count.
 
-The first scan starts when you open the tool window. Select **Rescan** after you change an instruction file or an ignore setting. The plugin reads files during a scan. It does not change files or run project commands during the scan.
+The plugin starts a background scan when you open a project. Open the tool window to see the result. If the scan is still running, wait for it to finish. Select **Rescan** after you change an instruction file or an ignore setting. The plugin reads files during a scan. It does not change files or run project commands during the scan.
 
 Select **User guide** to open this page in your browser. The plugin does not include project files in the link.
 
