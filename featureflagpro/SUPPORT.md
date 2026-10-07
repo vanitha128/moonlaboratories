@@ -1,13 +1,14 @@
 # FeatureFlagPro Support Policy
 
-Last updated: 2026-05-08
+Last updated: 2026-10-07
 
-This Support Policy describes how Moon Labs provides support for the
+This Support Policy describes how Moon Laboratories provides support for the
 FeatureFlagPro plugin.
 
 ## 1. Support Channels
 
-- Primary email: support@moonlabs.dev
+- Support form: https://product.moonlaboratories.com/support
+- Email: support@moonlabs.dev
 - Please include: IDE version, plugin version, operating system, and clear
   reproduction steps.
 
@@ -30,7 +31,8 @@ Support does not include:
 
 - Paid subscribers receive standard commercial support.
 - Trial users may receive best-effort support.
-- Free or read-only tiers (if offered) are handled on a best-effort basis.
+- Users continuing on a fallback license after subscription expiry may receive
+  best-effort support.
 
 ## 4. Response Targets
 

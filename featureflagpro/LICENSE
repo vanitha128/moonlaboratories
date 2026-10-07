@@ -1,21 +1,22 @@
 FeatureFlagPro End User License Agreement (EULA)
-Version 1.0
-Last Updated: 2026-05-08
+Version 1.1
+Last Updated: 2026-10-07
 
 IMPORTANT: PLEASE READ THIS AGREEMENT CAREFULLY. BY INSTALLING, COPYING,
 ACCESSING, OR USING FEATUREFLAGPRO, YOU AGREE TO BE BOUND BY THE TERMS OF
 THIS EULA.
 
 This End User License Agreement ("Agreement") is a legal agreement between you
-(an individual or entity, "Customer", "you", or "your") and Moon Labs
+(an individual or entity, "Customer", "you", or "your") and Moon Laboratories
 ("Licensor", "we", "us", or "our") governing your use of the FeatureFlagPro
 plugin software, including updates, documentation, and related materials
-("Software").
+("Software"). Moon Laboratories is the licensor of the Software. JetBrains
+and its affiliates are not parties to this Agreement.
 
 1. LICENSE GRANT
 Subject to your compliance with this Agreement and payment of applicable fees,
 Licensor grants you a limited, non-exclusive, non-transferable,
-non-sublicensable, revocable license to install and use the Software solely
+non-sublicensable license to install and use the Software solely
 for your internal business or personal development purposes.
 
 2. LICENSE MODEL
@@ -27,8 +28,30 @@ An organization license permits use by the number of seats purchased and
 assigned by the organization.
 
 2.3 Trial
-If offered, trial use is time-limited and may include feature restrictions.
-Upon trial expiration, continued use requires a paid license.
+The Software may be used without charge during the 30-day trial offered through
+JetBrains Marketplace. Upon trial expiration, continued use requires a paid
+license or another valid right to use the Software.
+
+2.4 Paid Subscription
+A paid subscription permits use of the then-current Software during the monthly
+or annual subscription period stated in your JetBrains Marketplace purchase
+confirmation, subject to the purchased number of users. When the subscription
+expires without renewal, the right to use versions newer than any Fallback
+Version ends.
+
+2.5 Fallback License
+If your JetBrains Marketplace purchase confirmation provides a fallback license
+and you have paid the applicable subscription fees in full for at least the
+immediately preceding 12 months without interruption, then, after your
+subscription expires without renewal, you retain a perpetual, royalty-free,
+non-exclusive, non-transferable license to use the Fallback Version, subject
+to this Agreement and your purchased user limits.
+
+The "Fallback Date" is the date 12 months before your subscription expires.
+The "Fallback Version" is the most recent Software version Moon Laboratories
+made available for public purchase before the Fallback Date, together with any
+bug-fix updates to that version. It does not include later feature updates or
+upgrades. Subscription expiration alone does not terminate a fallback license.
 
 3. OWNERSHIP
 The Software is licensed, not sold. Licensor and its licensors retain all
@@ -78,7 +101,8 @@ and governmental charges.
 9. TERM AND TERMINATION
 9.1 Term
 This Agreement starts when you first use the Software and continues until
-terminated.
+terminated. Expiration of a paid subscription does not itself terminate rights
+under a valid fallback license as described in Section 2.5.
 
 9.2 Termination by You
 You may terminate at any time by uninstalling and ceasing all use.
@@ -88,7 +112,8 @@ Licensor may terminate this Agreement immediately if you materially breach this
 Agreement or use the Software without a valid license.
 
 9.4 Effect of Termination
-Upon termination, your license ends immediately and you must stop using and
+Upon termination of this Agreement under Sections 9.2 or 9.3, your license,
+including any fallback license, ends immediately and you must stop using and
 delete all copies of the Software in your possession or control.
 
 10. DISCLAIMER OF WARRANTIES
@@ -143,6 +168,6 @@ If any provision is held unenforceable, the remaining provisions remain in full
 force and effect. Failure to enforce any provision is not a waiver.
 
 17. CONTACT
-Licensor: Moon Labs
+Licensor: Moon Laboratories
 Contact: https://product.moonlaboratories.com/support
 

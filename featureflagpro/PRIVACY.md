@@ -1,9 +1,9 @@
 # FeatureFlagPro Privacy Policy
 
-Last updated: 2026-05-08
+Last updated: 2026-10-07
 
-This Privacy Policy explains how Moon Labs ("we", "us", "our") handles data
-when you use the FeatureFlagPro plugin ("Plugin").
+This Privacy Policy explains how Moon Laboratories ("we", "us", "our")
+handles data when you use the FeatureFlagPro plugin ("Plugin").
 
 ## 1. Scope
 
@@ -16,7 +16,7 @@ FeatureFlagPro is designed to process project source files and configuration
 primarily within your local IDE environment.
 
 - We do not operate a backend that ingests your source code by default.
-- We do not intentionally collect your project code on Moon Labs servers.
+- We do not intentionally collect your project code on Moon Laboratories servers.
 
 ## 3. Data You Provide in Plugin Settings
 
@@ -24,8 +24,10 @@ Depending on configuration, you may enter credentials or identifiers for third-
 party feature flag providers (for example API tokens, project keys, namespace
 IDs, URLs).
 
-- These values are stored in your local IDE configuration.
-- These values are used by the Plugin to call provider APIs that you configure.
+- Sensitive provider tokens and keys are stored in your IDE's Password Safe.
+- Non-secret provider identifiers and settings are stored in local IDE
+  configuration.
+- The Plugin uses these values to call the provider APIs you configure.
 
 You are responsible for managing those credentials and following your
 organization's security policies.
@@ -52,16 +54,17 @@ The Plugin may write logs to your local IDE log files for troubleshooting.
 Those logs can include error messages and technical metadata. Avoid sharing
 logs publicly if they may contain sensitive environment details.
 
-If you contact support and choose to share logs or screenshots, you consent to
-our use of that information solely to provide support and improve reliability.
+If you contact support through the support form or email, you may provide your
+name, contact email, product, issue description, logs, or screenshots. We use
+that information to respond to your request and improve reliability.
 
 ## 7. Data Retention
 
 Plugin configuration and logs remain in your local environment until removed by
 you or your system policies.
 
-Support emails and attachments are retained only as long as reasonably
-necessary for support, legal compliance, and record-keeping.
+Support requests, messages, and attachments are retained only as long as
+reasonably necessary for support, legal compliance, and record-keeping.
 
 ## 8. Security
 
