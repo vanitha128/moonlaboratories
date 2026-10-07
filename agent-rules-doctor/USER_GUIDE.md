@@ -10,14 +10,14 @@ This guide describes the current development build. The plugin is not yet on Jet
 ## Before you start
 
 - Use a local project in IntelliJ IDEA 2025.3.6.1. This is the IDE version that we tested.
-- Get the development ZIP from the project build. See [Build the plugin](#build-the-plugin).
+- If you have source access, get the development ZIP from the project build. See [Build the plugin](#build-the-plugin).
 - Keep a copy of your instruction files before you change them.
 
 The plugin reads instruction files. It does not change them during a scan. The plugin does not run project commands.
 
 ## Build the plugin
 
-Use JDK 21 to build the development version.
+Use this procedure only if you have access to the private plugin source repository. Use JDK 21 to build the development version.
 
 1. Open a terminal in the [plugin source repository](https://github.com/foryforx/agent-rules-doctor).
 2. Run `./gradlew test buildPlugin`.
@@ -33,6 +33,17 @@ Use JDK 21 to build the development version.
 6. Restart the IDE if it asks you to restart.
 
 The build is for tests. Do not use it as a Marketplace release.
+
+## Install a Marketplace release
+
+This option will be available after JetBrains publishes the plugin. The development build is not on Marketplace.
+
+1. Open IntelliJ IDEA.
+2. Open **Settings** or **Preferences**.
+3. Select **Plugins**.
+4. Search Marketplace for **AgentRules Doctor**.
+5. Select **Install**.
+6. Restart the IDE if it asks you to restart.
 
 ## Scan a project
 
