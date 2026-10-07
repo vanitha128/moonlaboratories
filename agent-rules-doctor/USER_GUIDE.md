@@ -36,7 +36,7 @@ Select **User guide** to open this page in your browser. The plugin does not inc
 
 1. Select a finding in the list.
 2. Read the evidence and the suggested action below the list.
-3. Double-click the finding to open its source file.
+3. Select **Open source** to open the source file. You can also double-click the finding.
 4. Check the instruction and the project configuration.
 5. Correct the instruction or the project file if the finding is valid.
 
