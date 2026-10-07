@@ -72,7 +72,7 @@ The plugin does not make the correction for you. Keep a copy of your files befor
 
 ## Filter findings
 
-In **Findings**, use **All files** to show findings from one instruction file. Select **All files** again to show findings from every scanned file. The menu lists each file by its path in your project.
+In **Findings**, open the file menu. Select an instruction file to show its findings. Select **All files** to show findings from every scanned file.
 
 Use the other menu to select **All findings**, **Errors**, **Warnings**, or **Info**. You can use both menus together.
 
@@ -103,7 +103,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 | Undeclared Maven dependency | `UNDECLARED_MAVEN_DEPENDENCY` | An instruction explicitly says that `pom.xml` lists a named dependency, but the nearest readable POM does not list it. |
 | Missing build wrapper | `MISSING_BUILD_WRAPPER` | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
 | Unknown Maven phase | `UNKNOWN_MAVEN_PHASE` | A simple quoted `mvn` or `./mvnw` command names a phase that Maven does not provide. The check needs a nearby `pom.xml`. |
-| Gradle task registration not found | `UNREGISTERED_GRADLE_TASK` | An instruction says a named task is registered in `build.gradle` or `build.gradle.kts`, but the nearest file with that name has no matching literal registration. |
+| Gradle task registration not found | `UNREGISTERED_GRADLE_TASK` | An instruction says that `build.gradle` or `build.gradle.kts` registers a task. The nearest named file has no matching literal registration. |
 | Java version mismatch | `JAVA_VERSION_MISMATCH` | An explicit Java or JDK major version differs from an unambiguous project setting. |
 | Node version mismatch | `NODE_VERSION_MISMATCH` | An explicit Node major version differs from `.nvmrc` or `.node-version`. |
 | Python version mismatch | `PYTHON_VERSION_MISMATCH` | An explicit Python major or minor version differs from `.python-version`. |
@@ -137,7 +137,7 @@ The score uses active findings from the scan. It is a summary of these checks. A
 
 ## Ignore a known false positive
 
-In **Settings**, select **Create ignore file**. The plugin creates `.agentrules-doctor-ignore` in the project root and opens it in the editor. You can also create this file yourself. Use one setting on each line. Use `#` at the start of a line for a comment.
+In **Settings**, select **Create ignore file** if the file does not exist. The plugin creates `.agentrules-doctor-ignore` in the project root. It opens the file in the editor. If the file exists, select **Open ignore file**. Use one setting on each line. Use `#` at the start of a line for a comment.
 
 ```text
 # Ignore one rule in this project.
