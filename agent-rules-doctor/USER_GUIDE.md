@@ -81,7 +81,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 
 The Java check reads a root Gradle toolchain, Maven compiler release, or `.java-version`. The Node check reads a root `.nvmrc` or `.node-version`. The Python check reads a root `.python-version`.
 
-The token estimate uses four characters per token. Actual token counts vary. The Maven check does not inspect commands with options or plugin goals. The plugin reports only matches that it can check with local project data. It does not understand all natural-language instructions.
+The token estimate uses four characters per token. Actual token counts vary. The duplicate and conflict checks skip fenced code examples. The Maven check does not inspect commands with options or plugin goals. The plugin reports only matches that it can check with local project data. It does not understand all natural-language instructions.
 
 ## Understand the score
 
