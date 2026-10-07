@@ -110,6 +110,7 @@ The scanner skips generated project folders and dependency folders. It does not 
 | Missing npm script | `MISSING_NPM_SCRIPT` | An `npm run NAME` command names no script in a nearby `package.json`. |
 | Undeclared npm dependency | `UNDECLARED_NPM_DEPENDENCY` | An instruction explicitly says that `package.json` lists a package as a dependency, but the nearest manifest does not list it. |
 | Undeclared Maven dependency | `UNDECLARED_MAVEN_DEPENDENCY` | An instruction explicitly says that `pom.xml` lists a named dependency, but the nearest readable POM does not list it. |
+| Undeclared Gradle dependency | `UNDECLARED_GRADLE_DEPENDENCY` | An instruction explicitly says that `build.gradle` or `build.gradle.kts` lists a named dependency, but the nearest named file has other literal dependencies and does not list it. The check skips aliases and dynamic declarations. |
 | Missing build wrapper | `MISSING_BUILD_WRAPPER` | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
 | Unknown Maven phase | `UNKNOWN_MAVEN_PHASE` | A simple quoted `mvn` or `./mvnw` command names a phase that Maven does not provide. The check needs a nearby `pom.xml`. |
 | Gradle task registration not found | `UNREGISTERED_GRADLE_TASK` | An instruction says that `build.gradle` or `build.gradle.kts` registers a task. The nearest named file has no matching literal registration. |
