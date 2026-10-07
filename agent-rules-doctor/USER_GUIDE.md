@@ -2,7 +2,7 @@
 
 Last update: 2026-10-07
 
-AgentRules Doctor is a JetBrains plugin. It checks instruction files for coding agents in your project. The plugin shows findings in the **Agent Rules** tool window.
+This guide is for people who install AgentRules Doctor from JetBrains Marketplace. AgentRules Doctor checks instruction files for coding agents in a project you open in the IDE. It shows findings in the **Agent Rules** tool window.
 
 ## Install the plugin
 
@@ -13,11 +13,11 @@ AgentRules Doctor is a JetBrains plugin. It checks instruction files for coding 
 5. Select **Install**.
 6. Restart the IDE if it asks you to restart.
 
-Check the Marketplace listing for supported IDE versions.
+Check the Marketplace listing for supported IDE versions and available plans.
 
 ## Activate a license
 
-If the IDE asks for a license, sign in with the JetBrains Account that you used to buy the plugin. Follow the activation steps in the IDE. If you use a trial, follow the trial prompt in the IDE.
+If you bought Pro, sign in to the IDE with the JetBrains Account that you used for the purchase. Follow the activation steps in the IDE. If you start a trial, follow the trial prompt in the IDE. JetBrains Marketplace manages purchases and licenses.
 
 If activation fails, check that you use the correct JetBrains Account. Then use the [support page](SUPPORT.md).
 
