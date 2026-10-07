@@ -170,7 +170,7 @@ These limits can cause a missing finding. Check important instructions yourself.
 
 ## If the result is not as you expect
 
-**No files appear:** Check the file names and locations in [Supported instruction files](#supported-instruction-files). Then select **Rescan**.
+**No files appear:** Check the file names and locations in [Supported instruction files](#supported-instruction-files). If the instruction file is inside a separate child project, open that child project in the IDE. Then select **Rescan**.
 
 **A recent change does not appear:** Save the file. Then select **Rescan**.
 
