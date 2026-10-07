@@ -1,0 +1,165 @@
+DRAFT FOR ACCOUNT OWNER AND LEGAL REVIEW BEFORE PUBLICATION
+
+AgentRules Doctor End User License Agreement (EULA)
+Version 1.1
+Last Updated: 2026-10-07
+
+IMPORTANT: PLEASE READ THIS AGREEMENT CAREFULLY. BY INSTALLING, COPYING,
+ACCESSING, OR USING AGENTRULES DOCTOR, YOU AGREE TO BE BOUND BY THE TERMS OF
+THIS EULA.
+
+This End User License Agreement ("Agreement") is a legal agreement between you
+(an individual or entity, "Customer", "you", or "your") and Moon Laboratories
+("Licensor", "we", "us", or "our") governing your use of the AgentRules Doctor
+plugin software, including updates, documentation, and related materials
+("Software").
+
+1. LICENSE GRANT
+Subject to your compliance with this Agreement and payment of applicable fees
+for paid features, Licensor grants you a limited, non-exclusive, non-transferable,
+non-sublicensable, revocable license to install and use the Software solely
+for your internal business or personal development purposes.
+
+2. LICENSE MODEL
+2.1 Free Features
+Core instruction scanning features may be used without a paid license.
+
+2.2 Paid Features
+Pro features require a valid JetBrains Marketplace license. Individual and
+organization licenses are limited to the users or seats covered by the
+applicable Marketplace purchase.
+
+2.3 Trial
+If offered, a trial permits time-limited use of Pro features. After the trial,
+Pro features require a paid license; free features remain available.
+
+2.4 Subscriptions
+Pro subscriptions may be monthly or annual, as shown at checkout and in your
+JetBrains purchase confirmation. Pro access is subject to the subscription
+period, license status, and seat limits shown by JetBrains. Manage renewal and
+cancellation through your JetBrains Account or the applicable reseller. If a
+subscription expires without renewal, current Pro access ends; free features
+remain available.
+
+2.5 Fallback License
+If your JetBrains purchase confirmation grants a fallback license, you may
+continue using the version covered by that confirmation after subscription
+expiry, subject to its stated conditions and this Agreement. A fallback
+license does not grant access to later Pro versions. This section does not
+create a fallback right where none is included in the purchase confirmation.
+
+3. OWNERSHIP
+The Software is licensed, not sold. Licensor and its licensors retain all
+right, title, and interest in and to the Software, including all intellectual
+property rights. No rights are granted except as expressly stated in this
+Agreement.
+
+4. RESTRICTIONS
+You must not, and must not permit others to:
+(a) copy, modify, adapt, translate, or create derivative works of the Software,
+except as expressly allowed by applicable law;
+(b) reverse engineer, decompile, disassemble, or otherwise attempt to derive
+source code, underlying ideas, algorithms, file formats, or non-public APIs,
+except to the limited extent this restriction is prohibited by applicable law;
+(c) rent, lease, lend, sell, sublicense, assign, distribute, publish, or
+otherwise transfer the Software to any third party;
+(d) remove, alter, or obscure any proprietary notices;
+(e) circumvent or attempt to circumvent license controls, usage limits, or
+technical protection measures;
+(f) use the Software to build or offer a competing plugin or service;
+(g) use the Software in violation of any applicable law, regulation, or third
+party right.
+
+5. SUPPORT AND UPDATES
+Licensor provides technical support as described in the AgentRules Doctor Support
+Policy. Updates may be delivered in patch or later releases. Any update or
+upgrade we provide is part of the Software and governed by this Agreement
+unless accompanied by separate terms.
+
+6. THIRD-PARTY SERVICES
+Licensing and billing may use JetBrains Marketplace infrastructure. JetBrains
+acts as a reseller for Marketplace purchases and is not a party to this
+Agreement between you and Moon Laboratories. Your use of JetBrains services is
+governed by its terms and privacy policies.
+
+7. DATA AND PRIVACY
+The Software analyzes supported coding-agent instruction files locally in your IDE. It does not require an account or upload repository instructions to Moon Laboratories.
+See the AgentRules Doctor Privacy Policy for more detail.
+
+8. FEES, PAYMENTS, AND TAXES
+Paid subscriptions are sold and billed through JetBrains Marketplace or an
+authorized reseller. JetBrains or the reseller handles checkout, renewal,
+cancellation, refunds, and applicable sales taxes under the terms shown at
+purchase. Refund requests for Marketplace purchases follow JetBrains' refund
+policy. Your own tax obligations remain your responsibility where applicable.
+
+9. TERM AND TERMINATION
+9.1 Term
+This Agreement starts when you first use the Software and continues until
+terminated.
+
+9.2 Termination by You
+You may terminate at any time by uninstalling and ceasing all use.
+
+9.3 Termination by Licensor
+Licensor may terminate this Agreement immediately if you materially breach this
+Agreement or use paid features without a valid license.
+
+9.4 Effect of Termination
+Upon termination, your license ends immediately and you must stop using and
+delete all copies of the Software in your possession or control.
+
+10. DISCLAIMER OF WARRANTIES
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED "AS IS" AND
+"AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY,
+INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE, AND NON-INFRINGEMENT. LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL
+BE UNINTERRUPTED, ERROR-FREE, OR SECURE, OR THAT IT WILL MEET YOUR
+REQUIREMENTS.
+
+11. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL LICENSOR BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE
+DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS
+INTERRUPTION, ARISING OUT OF OR RELATED TO THIS AGREEMENT OR THE SOFTWARE,
+REGARDLESS OF THEORY OF LIABILITY.
+
+LICENSOR'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS
+AGREEMENT WILL NOT EXCEED THE AMOUNT PAID BY YOU FOR THE SOFTWARE DURING THE
+TWELVE (12) MONTHS PRECEDING THE CLAIM.
+
+SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS, SO SOME OF THE ABOVE MAY
+NOT APPLY TO YOU.
+
+12. INDEMNITY
+You agree to defend, indemnify, and hold harmless Licensor from and against
+any claims, liabilities, damages, losses, and expenses (including reasonable
+attorneys' fees) arising out of or related to your use of the Software in
+violation of this Agreement or applicable law.
+
+13. EXPORT COMPLIANCE
+You agree to comply with all applicable export control and sanctions laws and
+regulations. You represent that you are not located in, under control of, or a
+national/resident of any restricted country or prohibited party.
+
+14. GOVERNING LAW; VENUE
+This Agreement is governed by the laws of New South Wales, Australia, excluding
+conflict of law principles. The courts located in New South Wales, Australia
+have exclusive jurisdiction over disputes arising out of this Agreement, unless
+mandatory local law requires otherwise.
+
+15. CHANGES TO THIS AGREEMENT
+Licensor may update this Agreement from time to time. Updated terms become
+effective when published with the Software or on the product page, and apply
+prospectively. Your continued use after updated terms are effective constitutes
+acceptance.
+
+16. ENTIRE AGREEMENT; SEVERABILITY; WAIVER
+This Agreement is the entire agreement between you and Licensor regarding the
+Software and supersedes prior or contemporaneous agreements on the same subject.
+If any provision is held unenforceable, the remaining provisions remain in full
+force and effect. Failure to enforce any provision is not a waiver.
+
+17. CONTACT
+Licensor: Moon Laboratories
+Contact: https://product.moonlaboratories.com/support
