@@ -9,6 +9,7 @@ AgentRules Doctor plugin.
 
 ## 1. Support Channels
 
+- User guide: https://github.com/vanitha128/moonlaboratories/blob/main/agent-rules-doctor/USER_GUIDE.md
 - Primary channel: https://product.moonlaboratories.com/support
 - For purchases, renewals, cancellations, invoices, and refunds, use JetBrains
   Marketplace or your JetBrains Account support channel.
