@@ -109,7 +109,7 @@ An ignored file does not appear in the scanned file count. An ignored finding do
 
 ## Limits
 
-- The scanner stops after it visits 20,000 files.
+- The scanner stops after it visits 20,000 files. The status line says **Partial scan** if it reaches this limit. The score then covers only scanned files.
 - The scanner skips instruction files larger than 512 KiB.
 - The ignore file must be smaller than 64 KiB.
 - The scanner does not check every command or dependency.
