@@ -44,9 +44,11 @@ The plugin does not make the correction for you. Keep a copy of your files befor
 
 ## Filter findings
 
-Use the menu next to **Rescan**. Select **All findings**, **Errors**, **Warnings**, or **Info**.
+Use **All files** to show findings from one instruction file. Select **All files** again to show findings from every scanned file. The menu lists each file by its path in your project.
 
-The filter changes the list. It does not change the score. The status line shows the visible count and the total count.
+Use the other menu to select **All findings**, **Errors**, **Warnings**, or **Info**. You can use both menus together.
+
+The filters change the list. They do not change the score. The status line shows the visible count and the total count. The file menu keeps your selection after a rescan if that file is still in the project.
 
 ## Supported instruction files
 
