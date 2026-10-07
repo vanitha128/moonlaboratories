@@ -75,6 +75,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 | Node version mismatch | `NODE_VERSION_MISMATCH` | An explicit Node major version differs from `.nvmrc` or `.node-version`. |
 | Python version mismatch | `PYTHON_VERSION_MISMATCH` | An explicit Python major or minor version differs from `.python-version`. |
 | Repeated directive | `DUPLICATE_DIRECTIVE` | The same instruction appears in two supported files after basic text normalization. |
+| Nearly repeated directive | `NEAR_DUPLICATE_DIRECTIVE` | Two plain-text instructions in files in one folder differ only by `a`, `an`, or `the`. |
 | Repeated context | `DUPLICATE_CONTEXT` | A substantial paragraph appears in two supported files. The finding includes a rough estimate of repeated tokens. |
 | Conflicting directive | `CONFLICTING_DIRECTIVE` | Files in one folder say `Always ACTION` and `Never ACTION` for the same exact action. |
 | Invalid ignore entry | `INVALID_IGNORE_ENTRY` | An ignore setting contains an unknown rule, file, or instruction. |
