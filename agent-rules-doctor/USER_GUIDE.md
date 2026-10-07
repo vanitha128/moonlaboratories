@@ -2,7 +2,9 @@
 
 Last update: 2026-10-07
 
-This guide is for people who install AgentRules Doctor from JetBrains Marketplace. The plugin checks agent instruction files in an open project. It shows results in the **Agent Rules** tool window.
+This guide is for people who install AgentRules Doctor from JetBrains Marketplace, including people who have bought Pro. The plugin checks agent instruction files in an open project. It shows results in the **Agent Rules** tool window.
+
+AgentRules Doctor is not yet listed in JetBrains Marketplace. Use the installation and purchase steps when the plugin is available there.
 
 ## Install the plugin
 
@@ -28,10 +30,11 @@ JetBrains Marketplace manages the purchase and the license.
 
 To activate Pro:
 
-1. Open **Help > Register** in the IDE.
-2. Sign in with the JetBrains Account that you used for the purchase.
-3. Select the plugin license.
-4. Select **Activate**.
+1. Install and enable the plugin in the IDE.
+2. Open **Help > Register** in the IDE.
+3. Sign in with the JetBrains Account that you used for the purchase.
+4. Select the plugin license.
+5. Select **Activate**.
 
 If you start a trial, follow the trial prompt in the IDE.
 
