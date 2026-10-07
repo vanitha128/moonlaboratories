@@ -14,11 +14,11 @@ interactions.
 
 ## 2. Data Processing Overview
 
-AgentRules Doctor is designed to process project source files and configuration
-primarily within your local IDE environment.
+AgentRules Doctor processes supported instruction and configuration files in
+your local IDE environment.
 
-- We do not operate a backend that ingests your source code by default.
-- We do not intentionally collect your project code on Moon Laboratories servers.
+- The Plugin does not upload project files, instruction text, or findings to Moon Laboratories.
+- Moon Laboratories does not operate a backend for these scans.
 
 ## 3. Data Processed by the Plugin
 
@@ -33,10 +33,12 @@ You can edit or delete that file in your IDE.
 
 ## 4. Network Calls
 
-The current scanner does not send project files, instruction text, or findings over the
-network. JetBrains may handle plugin download, updates, licensing, and billing
-under its own terms and privacy policy. The IDE may use JetBrains platform
-services independently of AgentRules Doctor.
+The scan makes no network request. If you select **User guide**, the Plugin opens
+the guide in your browser.
+
+JetBrains may handle plugin download, updates, licensing, and billing under its
+own terms and privacy policy. The IDE may use JetBrains platform services
+independently of AgentRules Doctor.
 
 We do not sell personal data.
 
@@ -95,7 +97,7 @@ providers operate.
 ## 11. Changes to This Policy
 
 We may update this Privacy Policy from time to time. The latest version will be
-published with the Plugin materials or repository documentation.
+published with the Plugin materials or product documentation.
 
 ## 12. Contact
 

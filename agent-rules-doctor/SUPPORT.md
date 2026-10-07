@@ -39,7 +39,7 @@ Support does not include:
   technical support. Users with a fallback license receive support for the
   covered version on a best-effort basis.
 - Trial users may receive best-effort support.
-- Free or read-only tiers (if offered) are handled on a best-effort basis.
+- Free users receive best-effort support.
 
 ## 4. Response Targets
 
@@ -73,8 +73,8 @@ To speed resolution, include:
 
 ## 7. Security and Sensitive Data
 
-Do not send secrets in plain text unless strictly required. If logs include
-tokens, passwords, or internal URLs, redact them before sharing.
+Do not send secrets. If logs include tokens, passwords, or internal URLs,
+redact them before sharing.
 
 ## 8. Update and Fix Policy
 
