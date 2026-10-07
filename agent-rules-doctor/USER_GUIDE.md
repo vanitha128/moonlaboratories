@@ -1,42 +1,10 @@
 # AgentRules Doctor User Guide
 
-Version: Development build 0.1.0  
 Last update: 2026-10-07
 
 AgentRules Doctor is a JetBrains plugin. It checks instruction files for coding agents in your project. The plugin shows findings in the **Agent Rules** tool window.
 
-This guide describes the current development build. The plugin is not yet on JetBrains Marketplace. Paid features and license checks are not active.
-
-## Before you start
-
-- Use a local project in IntelliJ IDEA 2025.3.6.1. This is the IDE version that we tested.
-- If you have source access, get the development ZIP from the project build. See [Build the plugin](#build-the-plugin).
-- Keep a copy of your instruction files before you change them.
-
-The plugin reads instruction files. It does not change them during a scan. The plugin does not run project commands.
-
-## Build the plugin
-
-Use this procedure only if you have access to the private plugin source repository. Use JDK 21 to build the development version.
-
-1. Open a terminal in the [plugin source repository](https://github.com/foryforx/agent-rules-doctor).
-2. Run `./gradlew test buildPlugin`.
-3. Find the ZIP in `build/distributions/`.
-
-## Install the development build
-
-1. Open IntelliJ IDEA.
-2. Open **Settings** or **Preferences**.
-3. Select **Plugins**.
-4. Open the plugin menu. Select **Install Plugin from Disk**.
-5. Select the ZIP in `build/distributions/`.
-6. Restart the IDE if it asks you to restart.
-
-The build is for tests. Do not use it as a Marketplace release.
-
-## Install a Marketplace release
-
-This option will be available after JetBrains publishes the plugin. The development build is not on Marketplace.
+## Install the plugin
 
 1. Open IntelliJ IDEA.
 2. Open **Settings** or **Preferences**.
@@ -45,6 +13,14 @@ This option will be available after JetBrains publishes the plugin. The developm
 5. Select **Install**.
 6. Restart the IDE if it asks you to restart.
 
+Check the Marketplace listing for supported IDE versions.
+
+## Activate a license
+
+If the IDE asks for a license, sign in with the JetBrains Account that you used to buy the plugin. Follow the activation steps in the IDE. If you use a trial, follow the trial prompt in the IDE.
+
+If activation fails, check that you use the correct JetBrains Account. Then use the [support page](SUPPORT.md).
+
 ## Scan a project
 
 1. Open a local project in IntelliJ IDEA.
@@ -52,9 +28,9 @@ This option will be available after JetBrains publishes the plugin. The developm
 3. Wait for the scan to finish.
 4. Read the status line. It shows the score, file count, and finding count.
 
-The first scan starts when you open the tool window. Select **Rescan** after you change an instruction file or an ignore setting.
+The first scan starts when you open the tool window. Select **Rescan** after you change an instruction file or an ignore setting. The plugin reads files during a scan. It does not change files or run project commands.
 
-Select **User guide** to open this page in your browser. Your browser contacts GitHub. The plugin does not send project files with this action.
+Select **User guide** to open this page in your browser. The plugin does not include project files in the link.
 
 ## Read a finding
 
@@ -64,7 +40,7 @@ Select **User guide** to open this page in your browser. Your browser contacts G
 4. Check the instruction and the project configuration.
 5. Correct the instruction or the project file if the finding is valid.
 
-The plugin does not make the correction for you. Check each finding before you change a file.
+The plugin does not make the correction for you. Keep a copy of your files before you change them. Check each finding before you change a file.
 
 ## Filter findings
 
@@ -87,7 +63,7 @@ The scanner looks for these files:
 
 The scanner skips build output, dependencies, and other generated folders. It does not follow symbolic links.
 
-## Checks in this build
+## Checks
 
 | Check | Rule ID | What the plugin reports |
 | --- | --- | --- |
@@ -131,7 +107,7 @@ Select **Rescan** after you save the ignore file. The plugin shows a warning if 
 
 An ignored file does not appear in the scanned file count. An ignored finding does not reduce the score.
 
-## Limits of this build
+## Limits
 
 - The scanner stops after it visits 20,000 files.
 - The scanner skips instruction files larger than 512 KiB.
@@ -158,16 +134,4 @@ If the problem continues, use the [support page](SUPPORT.md). Send the IDE versi
 
 The scan runs on your computer. The plugin does not send instruction text or findings to Moon Laboratories. See the [privacy policy](PRIVACY.md).
 
-Use the [support page](SUPPORT.md) for product help. The [license draft](LICENSE) describes proposed legal terms. Moon Laboratories will finalize these documents before Marketplace release.
-
-JetBrains Marketplace will handle sales and license delivery if Moon Laboratories releases paid features. This development build has no purchase flow and no paid license check.
-
-## Development status
-
-On 2026-10-07, local tests and ZIP packaging passed. JetBrains Plugin Verifier reported compatibility with IntelliJ IDEA 2025.3.6.1.
-
-The verifier also reported four deprecated API usages and six experimental API usages. These results apply to the tested IDE version only.
-
-The Agent Rules tool window showed five sample findings and a 56/100 score. This test did not confirm every filter, Rescan, or source navigation action.
-
-Paid licensing, broader IDE tests, final legal terms, and Marketplace submission are not complete.
+Use the [support page](SUPPORT.md) for product help. JetBrains Marketplace manages purchases and license delivery.
