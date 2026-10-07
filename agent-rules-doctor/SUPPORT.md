@@ -22,8 +22,8 @@ Support covers:
 
 - installation and activation issues;
 - local agent-instruction scanning and finding navigation;
-- plugin behavior after trial, activation, renewal, expiration, or fallback
-  license changes for paid features, when available;
+- plugin behavior after trial, activation, renewal, or expiration of paid
+  features, when available;
 - reproducible bugs and regressions in released versions.
 
 Support does not include:
@@ -36,8 +36,7 @@ Support does not include:
 ## 3. Eligibility
 
 - Paid subscribers with an active subscription receive standard commercial
-  technical support. Users with a fallback license receive support for the
-  covered version on a best-effort basis.
+  technical support.
 - Trial users may receive best-effort support.
 - Free users receive best-effort support.
 
