@@ -1,108 +1,97 @@
 # MigrationGuard User Guide
 
-**Applies to:** technical preview 0.3.0
+**For:** IntelliJ IDEA users who install MigrationGuard from JetBrains Marketplace
 
 **Last update:** 2026-10-07
 
-MigrationGuard checks PostgreSQL Flyway migration files in IntelliJ IDEA. It reports SQL changes that can make a deployment unsafe.
+MigrationGuard checks PostgreSQL Flyway SQL files in your open project. It shows changes that need review before deployment. You can use the Free checks without a license. A trial or Pro subscription adds four checks.
 
-This guide describes the technical preview. MigrationGuard is not yet available on JetBrains Marketplace. The screenshots show preview behavior.
+**Availability:** The Marketplace listing is under preparation. The install and purchase steps below apply when JetBrains approves the listing.
 
-## Before you start
+## Install MigrationGuard
 
-- Use IntelliJ IDEA 2025.3.6.1. We tested the preview with this version.
-- Use a local project that contains versioned Flyway SQL files.
-- Request the preview plugin ZIP from [Moon Laboratories support](SUPPORT.md).
+1. Open IntelliJ IDEA 2025.3 or a later compatible version.
+2. Open **Settings** on Windows or Linux, or **Preferences** on macOS.
+3. Select **Plugins > Marketplace**.
+4. Search for **MigrationGuard** by **Moon Laboratories**.
+5. Select **Install**.
+6. Restart the IDE if it asks you to restart.
 
-MigrationGuard reads files that match `V<version>__<description>.sql`. It does not scan repeatable migrations such as `R__refresh_view.sql`.
+You can use the Free checks as soon as installation is complete. To confirm the installation, open **Plugins > Installed** and check that MigrationGuard is enabled.
 
-## Install the preview ZIP
+![MigrationGuard enabled in the Installed plugins list.](images/installed.jpg)
 
-1. Open IntelliJ IDEA.
-2. Open **Settings** or **Preferences**.
-3. Select **Plugins**.
-4. Select the gear icon on the Plugins page.
-5. Select **Install Plugin from Disk**.
-6. Select the MigrationGuard ZIP file.
-7. Select **OK**.
-8. Restart IntelliJ IDEA if it asks you to restart.
+*Figure 1. MigrationGuard appears in the Installed plugins list.*
 
-For more information, see [Install plugin from disk](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_disk) in the IntelliJ IDEA guide.
+For more help with installation, see the [IntelliJ IDEA plugin guide](https://www.jetbrains.com/help/idea/managing-plugins.html).
 
-## Scan a project
+## Scan your migrations
 
-1. Open a project that contains versioned Flyway SQL files.
+1. Open the project that contains your Flyway SQL files.
 2. Select **View > Tool Windows > MigrationGuard**.
 3. Select **Scan project**.
 4. Wait for the scan to finish.
 5. Read the finding count above the list.
 
-The sample project in Figure 1 has five migration files and six findings. Your count can be different.
+MigrationGuard scans versioned files with names such as `V2__add_accounts.sql`. It does not scan repeatable migrations with names such as `R__refresh_view.sql`.
 
-![Figure 1. MigrationGuard scan results in the sample project.](images/scan-results.jpg)
+![MigrationGuard scan results in IntelliJ IDEA.](images/scan-results.jpg)
 
-*Figure 1. The preview shows findings by severity, file, line, and title.*
+*Figure 2. Example results when all checks are active. Your results depend on your SQL files and license.*
 
-## Read a finding
+## Review a finding
 
 1. Select a finding in the list.
-2. Read **Why risky** in the lower pane.
-3. Read **Safer pattern** in the lower pane.
-4. Check the SQL and the database conditions.
-5. Double-click the finding to open its SQL file.
+2. Read **Why risky** and **Safer pattern** below the list.
+3. Check the SQL and your deployment plan.
+4. Double-click the finding to open its SQL file at the reported location.
 
-MigrationGuard opens the file at the reported location. Figure 2 shows the column deletion in `V2__unsafe_changes.sql`.
+A data-source message in the SQL editor comes from the IDE. MigrationGuard does not need a database connection.
 
-![Figure 2. A selected finding opens its SQL file.](images/open-source.jpg)
+## Use a trial or Pro subscription
 
-*Figure 2. Double-click a finding to open its source file.*
+1. Select **Unlock Pro** in the MigrationGuard tool window.
+2. Follow the JetBrains license window to start a trial or activate a subscription. You can also buy Pro from the MigrationGuard Marketplace page when sales are available.
+3. Sign in with the JetBrains Account that has the trial or subscription.
+4. Select **Scan project** again. The scan now includes Pro checks.
 
-The IDE can show a data-source message above the SQL. MigrationGuard does not need a database connection.
+If you bought Pro and it does not activate, open **Help > Register** in the IDE. Sign in with the account used for the purchase, refresh the license list, and activate the MigrationGuard license. Then scan again. See the [JetBrains license guide](https://www.jetbrains.com/help/idea/register.html) for account and activation steps.
 
-## Understand the result
+If a trial or subscription ends, the Free checks remain available. JetBrains Marketplace manages trial and subscription billing.
 
-Each finding has a severity, a rule ID, a file, a line, a reason, and a safer pattern.
+## Know which checks you have
 
-| Rule | Severity | Condition |
+| Rule | Access | What it finds |
 | --- | --- | --- |
-| `MG001` | Critical | `DROP TABLE` deletes a table. |
-| `MG002` | Critical | `DROP COLUMN` deletes a column. |
-| `MG003` | Warning | `RENAME` changes a table or column name. |
-| `MG004` | Warning | `CREATE INDEX` does not use `CONCURRENTLY`. |
-| `MG005` | Critical | Two files in one migration directory use the same numeric Flyway version. |
-| `MG006` | Warning | A new `NOT NULL` column has no default. |
-| `MG007` | Warning | `UPDATE` or `DELETE` has no `WHERE` clause. |
+| `MG001` | Free | `DROP TABLE` deletes a table. |
+| `MG002` | Free | `DROP COLUMN` deletes a column. |
+| `MG005` | Free | Two files in one migration directory use the same numeric Flyway version. |
+| `MG003` | Pro | `RENAME` changes a table or column name. |
+| `MG004` | Pro | `CREATE INDEX` does not use `CONCURRENTLY`. |
+| `MG006` | Pro | A new `NOT NULL` column has no default. |
+| `MG007` | Pro | `UPDATE` or `DELETE` has no `WHERE` clause. |
 
-**Critical** and **Warning** identify risk types. They do not show that a deployment will fail.
+Each finding shows a severity, rule ID, file, line, reason, and safer pattern. A **Critical** or **Warning** label identifies a risk. It does not mean that the migration will fail.
 
 ## Scan again after a change
 
-1. Review the finding and its SQL file.
-2. Change the migration only after you check its deployment history.
-3. Save the file.
+1. Review the finding and the SQL file.
+2. Check whether the migration has already run in another environment.
+3. Change and save the file only if your deployment plan permits it.
 4. Select **Scan project** again.
-5. Check the new findings.
 
-Do not rename or edit a migration that is already applied without a release plan. MigrationGuard does not change SQL files.
+MigrationGuard does not change your SQL files. Do not edit an applied migration without a release plan.
 
-## Free and Pro features
+## If you see no findings
 
-All seven checks run in the 0.3.0 technical preview. This preview does not sell subscriptions or activate Pro licenses.
-
-The planned paid release keeps `MG001`, `MG002`, and `MG005` free. Pro adds `MG003`, `MG004`, `MG006`, and `MG007`.
-
-After the paid release, JetBrains Marketplace will manage trials and subscriptions. We will update this guide with tested activation steps before release.
-
-## If a scan has no findings
-
-1. Check that the project contains files with names such as `V2__add_accounts.sql`.
-2. Check that the files are inside the open project.
+1. Check that versioned Flyway SQL files are inside the open project.
+2. Check the file names. A valid example is `V2__add_accounts.sql`.
 3. Select **Scan project** again.
 
-A result with no findings does not prove that a migration is safe. MigrationGuard uses static checks for selected SQL patterns.
+No findings does not prove that a migration is safe. MigrationGuard checks selected SQL patterns and cannot test your database or deployment.
 
-## Data and support
+## Privacy and help
 
-MigrationGuard checks SQL files on your computer. It does not connect to your database or upload your SQL.
+MigrationGuard reads SQL files on your computer. It does not connect to a database or upload your SQL.
 
-For help, use the [support policy](SUPPORT.md). Read the [privacy policy](PRIVACY.md) and [license](LICENSE) before use.
+For help with a scan, license, or subscription, see [Support](SUPPORT.md). Read the [Privacy Policy](PRIVACY.md) and [License](LICENSE) for more information.
