@@ -81,7 +81,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 
 | Check | Rule ID | What the plugin reports |
 | --- | --- | --- |
-| Missing path | `MISSING_PATH` | A supported literal relative path in a code span or Markdown link does not exist. |
+| Missing path | `MISSING_PATH` | A supported literal relative path in a code span or Markdown link does not exist. The check skips ambiguous examples and import names. |
 | Missing npm script | `MISSING_NPM_SCRIPT` | An `npm run NAME` command names no script in a nearby `package.json`. |
 | Undeclared npm dependency | `UNDECLARED_NPM_DEPENDENCY` | An instruction explicitly says that `package.json` lists a package as a dependency, but the nearest manifest does not list it. |
 | Missing build wrapper | `MISSING_BUILD_WRAPPER` | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
@@ -99,6 +99,8 @@ The scanner skips build output, dependencies, and other generated folders. It do
 Missing path, missing npm script, missing build wrapper, unknown Maven phase, and invalid ignore entry checks are Free. The other checks require Pro access. When the status says **Free checks**, the list and score include only Free findings.
 
 The npm dependency check uses explicit statements such as ``package.json lists `react` as a dependency``. It reads the nearest `package.json`. It does not treat an instruction to install a package as a claim that the package is already declared.
+
+The path check skips fenced examples, lines marked as examples or conventions, package imports, path aliases, image tags, and unqualified directory names. For a Cursor rule with one clear file scope, it also checks paths from that scoped folder. If you open a parent folder that contains several separate projects, open each project at its own root for more accurate path results.
 
 The Java check reads a root Gradle toolchain, Maven compiler release, or `.java-version`. The Node check reads a root `.nvmrc` or `.node-version`. The Python check reads a root `.python-version`.
 
