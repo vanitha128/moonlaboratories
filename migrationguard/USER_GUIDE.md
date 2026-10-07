@@ -1,63 +1,66 @@
-# MigrationGuard User Guide
+# Moon Migration Audit User Guide
 
-**For:** IntelliJ IDEA users who install MigrationGuard from JetBrains Marketplace
+**For:** People who install Moon Migration Audit in IntelliJ IDEA, including people with a Pro subscription.
 
-**Last update:** 2026-10-07
+**Updated:** 2026-10-07
 
-MigrationGuard checks PostgreSQL Flyway SQL files in your open project. It shows changes that need review before deployment. You can use the Free checks without a license. A trial or Pro subscription adds four checks.
+Moon Migration Audit checks PostgreSQL Flyway SQL migrations in your open project. It reports changes that need review before deployment. The Free checks work without a license. A valid trial or Pro subscription adds four checks.
 
-**Availability:** The Marketplace listing is under preparation. The install and purchase steps below apply when JetBrains approves the listing.
+**Availability:** JetBrains is reviewing the Marketplace listing. You can follow the installation steps after JetBrains publishes it.
 
-## Install MigrationGuard
+## Install the plugin
 
 1. Open IntelliJ IDEA 2025.3 or a later compatible version.
-2. Open **Settings** on Windows or Linux, or **Preferences** on macOS.
+2. Open **Settings** on Windows or Linux. Open **Preferences** on macOS.
 3. Select **Plugins > Marketplace**.
-4. Search for **MigrationGuard** by **Moon Laboratories**.
+4. Search for **Moon Migration Audit** by **Moon Laboratories**.
 5. Select **Install**.
-6. Restart the IDE if it asks you to restart.
+6. Restart IntelliJ IDEA if it asks you to restart.
 
-You can use the Free checks as soon as installation is complete. To confirm the installation, open **Plugins > Installed** and check that MigrationGuard is enabled.
+To confirm the installation, select **Plugins > Installed**. Make sure that **Moon Migration Audit** is enabled.
 
-![MigrationGuard enabled in the Installed plugins list.](images/installed.jpg)
+![Moon Migration Audit enabled in the Installed plugins list.](images/installed.jpg)
 
-*Figure 1. MigrationGuard appears in the Installed plugins list.*
+*Figure 1. Moon Migration Audit is installed and enabled.*
 
-For more help with installation, see the [IntelliJ IDEA plugin guide](https://www.jetbrains.com/help/idea/managing-plugins.html).
+For help with installation, see the [IntelliJ IDEA plugin guide](https://www.jetbrains.com/help/idea/managing-plugins.html).
 
 ## Scan your migrations
 
-1. Open the project that contains your Flyway SQL files.
-2. Select **View > Tool Windows > MigrationGuard**.
+1. Open your project in IntelliJ IDEA.
+2. Select **View > Tool Windows > Moon Migration Audit**.
 3. Select **Scan project**.
 4. Wait for the scan to finish.
-5. Read the finding count above the list.
+5. Read the finding count and the findings in the list.
 
-MigrationGuard scans versioned files with names such as `V2__add_accounts.sql`. It does not scan repeatable migrations with names such as `R__refresh_view.sql`.
+The plugin scans versioned Flyway SQL files. For example, it scans `V2__add_accounts.sql`. It does not scan repeatable files such as `R__refresh_view.sql`.
 
-![MigrationGuard scan results in IntelliJ IDEA.](images/scan-results.jpg)
+![Moon Migration Audit showing a Free scan result.](images/scan-results.jpg)
 
-*Figure 2. Example results when all checks are active. Your results depend on your SQL files and license.*
+*Figure 2. The Free scan reports a column deletion in an example project. Your results depend on your SQL files.*
 
 ## Review a finding
 
 1. Select a finding in the list.
 2. Read **Why risky** and **Safer pattern** below the list.
-3. Check the SQL and your deployment plan.
-4. Double-click the finding to open its SQL file at the reported location.
+3. Review the SQL and your deployment plan.
+4. Double-click the finding to open the SQL file at the reported line.
 
-A data-source message in the SQL editor comes from the IDE. MigrationGuard does not need a database connection.
+The plugin does not change your SQL files. It does not need a database connection. If the SQL editor asks you to configure a data source, you can still run the scan.
 
-## Use a trial or Pro subscription
+## Activate a trial or a purchased subscription
 
-1. Select **Unlock Pro** in the MigrationGuard tool window.
-2. Follow the JetBrains license window to start a trial or activate a subscription. You can also buy Pro from the MigrationGuard Marketplace page when sales are available.
-3. Sign in with the JetBrains Account that has the trial or subscription.
-4. Select **Scan project** again. The scan now includes Pro checks.
+1. Select **Unlock Pro** in the Moon Migration Audit tool window.
+2. In the JetBrains license window, sign in with your JetBrains Account.
+3. If you bought Pro, use the account that you used for the purchase. Select the Moon Migration Audit license.
+4. If you want a trial, start it when JetBrains offers it in the license window.
+5. Return to the tool window and select **Scan project** again.
 
-If you bought Pro and it does not activate, open **Help > Register** in the IDE. Sign in with the account used for the purchase, refresh the license list, and activate the MigrationGuard license. Then scan again. See the [JetBrains license guide](https://www.jetbrains.com/help/idea/register.html) for account and activation steps.
+When sales are available, you can buy Pro on the [Moon Migration Audit Marketplace page](https://plugins.jetbrains.com/plugin/34848-moon-migration-audit). JetBrains manages the purchase and subscription.
 
-If a trial or subscription ends, the Free checks remain available. JetBrains Marketplace manages trial and subscription billing.
+If Pro does not activate, open **Help > Register** in IntelliJ IDEA. Sign in with the account that has the license. Refresh the license list, activate Moon Migration Audit, and scan again. See the [JetBrains license guide](https://www.jetbrains.com/help/idea/register.html) for more help.
+
+If your trial or subscription ends, you can continue to use the Free checks.
 
 ## Know which checks you have
 
@@ -71,27 +74,27 @@ If a trial or subscription ends, the Free checks remain available. JetBrains Mar
 | `MG006` | Pro | A new `NOT NULL` column has no default. |
 | `MG007` | Pro | `UPDATE` or `DELETE` has no `WHERE` clause. |
 
-Each finding shows a severity, rule ID, file, line, reason, and safer pattern. A **Critical** or **Warning** label identifies a risk. It does not mean that the migration will fail.
+Each finding gives you a severity, rule ID, file, line, reason, and safer pattern. A **Critical** or **Warning** label identifies a risk. It does not mean that the migration will fail.
 
 ## Scan again after a change
 
-1. Review the finding and the SQL file.
-2. Check whether the migration has already run in another environment.
+1. Review the finding and its SQL file.
+2. Check whether the migration already ran in another environment.
 3. Change and save the file only if your deployment plan permits it.
 4. Select **Scan project** again.
 
-MigrationGuard does not change your SQL files. Do not edit an applied migration without a release plan.
+Do not change an applied migration without a release plan.
 
-## If you see no findings
+## If the scan finds nothing
 
-1. Check that versioned Flyway SQL files are inside the open project.
-2. Check the file names. A valid example is `V2__add_accounts.sql`.
+1. Make sure that your versioned Flyway SQL files are in the open project.
+2. Check the file names. For example, use `V2__add_accounts.sql`.
 3. Select **Scan project** again.
 
-No findings does not prove that a migration is safe. MigrationGuard checks selected SQL patterns and cannot test your database or deployment.
+A scan with no findings does not prove that a migration is safe. The plugin checks selected SQL patterns. It does not test your database or deployment.
 
 ## Privacy and help
 
-MigrationGuard reads SQL files on your computer. It does not connect to a database or upload your SQL.
+The plugin reads SQL files on your computer. It does not connect to a database or upload your SQL.
 
 For help with a scan, license, or subscription, see [Support](SUPPORT.md). Read the [Privacy Policy](PRIVACY.md) and [License](LICENSE) for more information.
