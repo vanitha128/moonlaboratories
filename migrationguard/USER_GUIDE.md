@@ -33,7 +33,7 @@ For help with installation, see the [IntelliJ IDEA plugin guide](https://www.jet
 4. Wait for the scan to finish.
 5. Read the finding count and the findings in the list.
 
-The plugin scans versioned Flyway SQL files. For example, it scans `V2__add_accounts.sql`. It does not scan repeatable files such as `R__refresh_view.sql`.
+The plugin scans versioned Flyway SQL files that use the default `V` prefix, `__` separator, and `.sql` suffix. For example, it scans `V2__add_accounts.sql`. It does not scan repeatable files such as `R__refresh_view.sql`. If your project changes these filename parts, the plugin does not find those files.
 
 ![Moon Migration Audit showing a Free scan result.](images/scan-results.jpg)
 
