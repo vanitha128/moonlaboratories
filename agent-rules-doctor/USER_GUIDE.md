@@ -101,6 +101,8 @@ Missing path, missing npm script, missing build wrapper, unknown Maven phase, an
 
 The npm dependency check uses explicit statements such as ``package.json lists `react` as a dependency``. It reads the nearest `package.json`. It does not treat an instruction to install a package as a claim that the package is already declared.
 
+The npm checks read the top-level sections of a valid `package.json`. If the file is not valid JSON, the plugin skips these checks for that file.
+
 The Maven dependency check uses explicit statements such as ``pom.xml lists `org.example:example-lib` as a dependency``. It reads the nearest `pom.xml`. It skips a POM that it cannot read or that uses a property in a dependency name.
 
 The path check skips fenced examples, lines marked as examples or conventions, package imports, path aliases, image tags, and unqualified directory names. For a Cursor rule with one clear file scope, it also checks paths from that scoped folder. If you open a parent folder that contains several separate projects, open each project at its own root for more accurate path results.
