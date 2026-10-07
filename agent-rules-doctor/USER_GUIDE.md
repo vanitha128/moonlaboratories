@@ -1,10 +1,10 @@
 # AgentRules Doctor User Guide
 
-Last update: 2026-10-07
+Last update: 2026-10-08
 
 This guide is for people who install AgentRules Doctor from JetBrains Marketplace or buy Pro. The plugin checks agent instruction files in an open project. It shows results in the **Agent Rules** tool window.
 
-AgentRules Doctor is not yet listed in JetBrains Marketplace. Use the installation and purchase steps when the plugin is available there.
+AgentRules Doctor is under review in JetBrains Marketplace. Public installation and Pro purchases are not available yet. Use the installation and purchase steps when the plugin is released.
 
 ## Install the plugin
 
@@ -175,6 +175,8 @@ These limits can cause a missing finding. Check important instructions yourself.
 **No files appear:** Check the file names and locations in [Supported instruction files](#supported-instruction-files). If the instruction file is inside a separate child project, open that child project in the IDE. Then select **Rescan**.
 
 **A recent change does not appear:** Save the file. Then select **Rescan**.
+
+**The ignore file does not open:** Check whether IntelliJ IDEA shows Safe Mode. Safe Mode can restrict file actions. Trust a project only if you trust its source. Then select **Open ignore file** again. If the problem continues, use the support page.
 
 **A finding looks incorrect:** Read its evidence. Check the path or configuration file. Use an ignore setting only if the finding is a known false positive.
 

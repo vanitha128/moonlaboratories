@@ -1,0 +1,38 @@
+<h2>Install AgentRules Doctor</h2>
+<ol>
+  <li>Open IntelliJ IDEA.</li>
+  <li>Open <strong>Settings</strong> or <strong>Preferences</strong>.</li>
+  <li>Select <strong>Plugins &gt; Marketplace</strong>.</li>
+  <li>Search for <strong>AgentRules Doctor</strong>. Select <strong>Install</strong>.</li>
+  <li>Restart the IDE if it asks you to restart.</li>
+</ol>
+<p>Check the Marketplace listing for supported IDE versions. These steps apply after the public release.</p>
+<h2>Scan a project</h2>
+<ol>
+  <li>Open a local project at its root folder.</li>
+  <li>Select <strong>View &gt; Tool Windows &gt; Agent Rules</strong>.</li>
+  <li>Wait for the scan to finish.</li>
+  <li>Read the score and finding count in <strong>Health</strong>.</li>
+  <li>Select a finding. Select <strong>View finding</strong> to read its details.</li>
+  <li>Select <strong>Open source</strong>. Check the evidence before you change the file.</li>
+  <li>Save your changes. Select <strong>Rescan</strong>.</li>
+</ol>
+<p>The scan reads local files. It does not change files or run project commands.</p>
+<h2>Use the views</h2>
+<ul>
+  <li><strong>Health:</strong> Read the project score, coverage, and top findings.</li>
+  <li><strong>Files:</strong> Select a file. Read its score and findings. Select <strong>Open file</strong> to inspect it.</li>
+  <li><strong>Findings:</strong> Read the evidence and suggested action. Use the file and severity menus to filter the list.</li>
+  <li><strong>Duplicates &amp; conflicts:</strong> Compare repeated or conflicting instructions. Results require Pro access.</li>
+  <li><strong>Settings:</strong> Check license status. Create or open the local ignore file.</li>
+</ul>
+<h2>Ignore a known false positive</h2>
+<p>In <strong>Settings</strong>, select <strong>Create ignore file</strong>. The plugin creates <code>.agentrules-doctor-ignore</code> in the project root. Use one setting on each line.</p>
+<pre># Ignore a rule in this project.
+rule DUPLICATE_DIRECTIVE
+
+# Skip one instruction file.
+file generated/AGENTS.md</pre>
+<p>Use a valid rule ID or the relative path of an existing instruction file. Save the file. Select <strong>Rescan</strong>. The plugin reports invalid settings.</p>
+<h2>Read the full guide</h2>
+<p><a href="https://github.com/vanitha128/moonlaboratories/blob/main/agent-rules-doctor/USER_GUIDE.md">Open the user guide</a> for activation steps, supported file patterns, rule IDs, scan limits, and troubleshooting.</p>
