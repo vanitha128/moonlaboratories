@@ -2,26 +2,42 @@
 
 Last update: 2026-10-07
 
-This guide is for people who install AgentRules Doctor from JetBrains Marketplace. AgentRules Doctor checks instruction files for coding agents in a project you open in the IDE. It shows findings in the **Agent Rules** tool window.
+This guide is for people who install AgentRules Doctor from JetBrains Marketplace. The plugin checks agent instruction files in an open project. It shows results in the **Agent Rules** tool window.
 
 ## Install the plugin
 
 1. Open IntelliJ IDEA.
 2. Open **Settings** or **Preferences**.
 3. Select **Plugins**.
-4. Search Marketplace for **AgentRules Doctor**.
+4. Select the **Marketplace** tab. Search for **AgentRules Doctor**.
 5. Select **Install**.
 6. Restart the IDE if it asks you to restart.
 
 Check the Marketplace listing for supported IDE versions and available plans.
 
-## Activate a license
+## Buy and activate Pro
 
-If you bought Pro, sign in to the IDE with the JetBrains Account that you used for the purchase. Follow the activation steps in the IDE. If you start a trial, follow the trial prompt in the IDE. JetBrains Marketplace manages purchases and licenses.
+You can use Free checks without buying Pro. To buy Pro:
 
-If activation fails, check that you use the correct JetBrains Account. Then use the [support page](SUPPORT.md).
+1. Open the plugin page in JetBrains Marketplace.
+2. Select **Pricing**.
+3. Select a plan.
+4. Complete the purchase with your JetBrains Account.
 
-The status line shows **Pro active** when the IDE confirms Pro access. If you activated Pro and the status still says **Free checks**, select **Refresh license**. This button checks the license again and rescans the project. If the status says **License status pending**, wait for the IDE to finish starting, then select **Refresh license**.
+JetBrains Marketplace manages the purchase and the license.
+
+To activate Pro:
+
+1. Open **Help > Register** in the IDE.
+2. Sign in with the JetBrains Account that you used for the purchase.
+3. Select the plugin license.
+4. Select **Activate**.
+
+If you start a trial, follow the trial prompt in the IDE.
+
+The status line shows **Pro active** when the IDE confirms Pro access. If the license is not on the list, select **Refresh license list** in the IDE license window. If the plugin still shows **Free checks**, select **Refresh license** in the plugin. This checks the license again and scans the project. If the plugin shows **License status pending**, wait for the IDE to start. Then select **Refresh license**.
+
+If activation fails, check that you use the correct JetBrains Account. For purchase or license delivery problems, contact JetBrains Marketplace. For a plugin problem, use the [support page](SUPPORT.md).
 
 ## Scan a project
 
