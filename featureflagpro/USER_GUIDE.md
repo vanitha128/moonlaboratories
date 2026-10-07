@@ -2,14 +2,18 @@
 
 FeatureFlagPro finds feature flag calls in your project. It shows each detected flag in the **Feature Flags** tool window. You can find a flag in code, see its provider state, and change a supported boolean flag in a connected provider.
 
-This guide uses short, direct instructions based on ASD-STE100 Simplified Technical English. The screenshots show a sample project. No provider account is connected in the screenshots.
+Use this guide after you install FeatureFlagPro from JetBrains Marketplace. The screenshots show a sample project. No provider account is connected in the screenshots.
 
-## Before you start
+## Install and activate the plugin
 
-- Use a compatible JetBrains IDE. The plugin requires IntelliJ Platform 2023.3 or later.
-- Install **FeatureFlagPro** from [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/31614-featureflagpro).
-- Activate the Marketplace license or trial for the paid version. The plugin needs a valid license to scan files and connect to providers.
-- Open a project that contains feature flag calls.
+1. Open a compatible JetBrains IDE. FeatureFlagPro requires IntelliJ Platform 2023.3 or later.
+2. Open **Settings > Plugins > Marketplace**. On macOS, you can open **Preferences > Plugins > Marketplace**.
+3. Search for **FeatureFlagPro**.
+4. Select **Install**. Restart the IDE if it asks you to do so.
+5. Follow the IDE prompts to activate your Marketplace subscription or trial.
+6. Open a project that contains feature flag calls.
+
+You can also open the [FeatureFlagPro Marketplace page](https://plugins.jetbrains.com/plugin/31614-featureflagpro) in a browser.
 
 ## 1. Find flags in your project
 
