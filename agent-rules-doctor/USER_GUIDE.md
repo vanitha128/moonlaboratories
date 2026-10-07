@@ -74,6 +74,7 @@ The scanner skips build output, dependencies, and other generated folders. It do
 | Undeclared npm dependency | `UNDECLARED_NPM_DEPENDENCY` | An instruction explicitly says that `package.json` lists a package as a dependency, but the nearest manifest does not list it. |
 | Missing build wrapper | `MISSING_BUILD_WRAPPER` | A code span starts with `./gradlew` or `./mvnw`, but the wrapper file does not exist. |
 | Unknown Maven phase | `UNKNOWN_MAVEN_PHASE` | A simple quoted `mvn` or `./mvnw` command names a phase that Maven does not provide. The check needs a nearby `pom.xml`. |
+| Gradle task registration not found | `UNREGISTERED_GRADLE_TASK` | An instruction says a named task is registered in `build.gradle` or `build.gradle.kts`, but the nearest file with that name has no matching literal registration. |
 | Java version mismatch | `JAVA_VERSION_MISMATCH` | An explicit Java or JDK major version differs from an unambiguous project setting. |
 | Node version mismatch | `NODE_VERSION_MISMATCH` | An explicit Node major version differs from `.nvmrc` or `.node-version`. |
 | Python version mismatch | `PYTHON_VERSION_MISMATCH` | An explicit Python major or minor version differs from `.python-version`. |
@@ -86,6 +87,8 @@ The scanner skips build output, dependencies, and other generated folders. It do
 The npm dependency check uses explicit statements such as ``package.json lists `react` as a dependency``. It reads the nearest `package.json`. It does not treat an instruction to install a package as a claim that the package is already declared.
 
 The Java check reads a root Gradle toolchain, Maven compiler release, or `.java-version`. The Node check reads a root `.nvmrc` or `.node-version`. The Python check reads a root `.python-version`.
+
+The Gradle check looks for explicit statements such as ``build.gradle.kts registers `verifyRules` as a task``. It does not check ordinary `gradlew` commands because plugins can create tasks. If a task comes from a plugin or another build file, check the evidence before you change the instruction.
 
 The token estimate uses four characters per token. Actual token counts vary. The duplicate and conflict checks skip fenced code examples. The Maven check does not inspect commands with options or plugin goals. The plugin reports only matches that it can check with local project data. It does not understand all natural-language instructions.
 
