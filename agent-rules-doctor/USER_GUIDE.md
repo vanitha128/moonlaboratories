@@ -21,6 +21,8 @@ If the IDE asks for a license, sign in with the JetBrains Account that you used 
 
 If activation fails, check that you use the correct JetBrains Account. Then use the [support page](SUPPORT.md).
 
+The status line shows **Pro active** when the IDE confirms Pro access. If you activated Pro and the status still says **Free checks**, select **Refresh license**. This button checks the license again and rescans the project. If the status says **License status pending**, wait for the IDE to finish starting, then select **Refresh license**.
+
 ## Scan a project
 
 1. Open a local project in IntelliJ IDEA.
@@ -83,6 +85,8 @@ The scanner skips build output, dependencies, and other generated folders. It do
 | Repeated context | `DUPLICATE_CONTEXT` | A substantial paragraph appears in two supported files. The finding includes a rough estimate of repeated tokens. |
 | Conflicting directive | `CONFLICTING_DIRECTIVE` | Files in one folder say `Always ACTION` and `Never ACTION` for the same exact action. |
 | Invalid ignore entry | `INVALID_IGNORE_ENTRY` | An ignore setting contains an unknown rule, file, or instruction. |
+
+Missing path, missing npm script, missing build wrapper, unknown Maven phase, and invalid ignore entry checks are Free. The other checks require Pro access. When the status says **Free checks**, the list and score include only Free findings.
 
 The npm dependency check uses explicit statements such as ``package.json lists `react` as a dependency``. It reads the nearest `package.json`. It does not treat an instruction to install a package as a claim that the package is already declared.
 
