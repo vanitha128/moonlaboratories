@@ -1,9 +1,9 @@
-# Migration Guard Support Policy
+# Moon Migration Audit Support Policy
 
 Last updated: 2026-10-07
 
 This Support Policy describes how Moon Laboratories provides support for the
-Migration Guard plugin.
+Moon Migration Audit plugin.
 
 ## 1. Support Channels
 
@@ -62,7 +62,7 @@ These are targets, not guaranteed service levels.
 To speed resolution, include:
 
 - JetBrains IDE name and version;
-- Migration Guard version;
+- Moon Migration Audit version;
 - operating system and version;
 - exact steps to reproduce;
 - expected behavior vs actual behavior;

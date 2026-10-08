@@ -1,14 +1,14 @@
-Migration Guard End User License Agreement (EULA)
+Moon Migration Audit End User License Agreement (EULA)
 Version 1.2
 Last Updated: 2026-10-07
 
 IMPORTANT: PLEASE READ THIS AGREEMENT CAREFULLY. BY INSTALLING, COPYING,
-ACCESSING, OR USING MIGRATION GUARD, YOU AGREE TO BE BOUND BY THE TERMS OF
+ACCESSING, OR USING MOON MIGRATION AUDIT, YOU AGREE TO BE BOUND BY THE TERMS OF
 THIS EULA.
 
 This End User License Agreement ("Agreement") is a legal agreement between you
 (an individual or entity, "Customer", "you", or "your") and Moon Laboratories
-("Licensor", "we", "us", or "our") governing your use of the Migration Guard
+("Licensor", "we", "us", or "our") governing your use of the Moon Migration Audit
 plugin software, including updates, documentation, and related materials
 ("Software").
 
@@ -69,7 +69,7 @@ technical protection measures;
 party right.
 
 5. SUPPORT AND UPDATES
-Licensor provides technical support as described in the Migration Guard Support
+Licensor provides technical support as described in the Moon Migration Audit Support
 Policy. Updates may be delivered in patch or later releases. Any update or
 upgrade we provide is part of the Software and governed by this Agreement
 unless accompanied by separate terms.
@@ -83,7 +83,7 @@ governed by its terms and privacy policies.
 7. DATA AND PRIVACY
 The Software analyzes Flyway SQL files locally in your IDE. It does not require
 database credentials or upload migration contents to Moon Laboratories.
-See the Migration Guard Privacy Policy for more detail.
+See the Moon Migration Audit Privacy Policy for more detail.
 
 8. FEES, PAYMENTS, AND TAXES
 Paid subscriptions are sold and billed through JetBrains Marketplace or an

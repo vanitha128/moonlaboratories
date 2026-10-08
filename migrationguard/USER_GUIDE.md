@@ -1,10 +1,10 @@
-# Migration Guard User Guide
+# Moon Migration Audit User Guide
 
-**For:** People who install Migration Guard in IntelliJ IDEA, including people with a Pro subscription.
+**For:** People who install Moon Migration Audit in IntelliJ IDEA, including people with a Pro subscription.
 
 **Updated:** 2026-10-07
 
-Migration Guard checks PostgreSQL Flyway SQL migrations in your open project. It reports changes that need review before deployment. The Free checks work without a license. A valid trial or Pro subscription adds four checks.
+Moon Migration Audit checks PostgreSQL Flyway SQL migrations in your open project. It reports changes that need review before deployment. The Free checks work without a license. A valid trial or Pro subscription adds four checks.
 
 **Availability:** JetBrains is reviewing the Marketplace listing. You can follow the installation steps after JetBrains publishes it.
 
@@ -13,29 +13,29 @@ Migration Guard checks PostgreSQL Flyway SQL migrations in your open project. It
 1. Open IntelliJ IDEA 2025.3 or a later compatible version.
 2. Open **Settings** on Windows or Linux. Open **Preferences** on macOS.
 3. Select **Plugins > Marketplace**.
-4. Search for **Migration Guard** by **Moon Laboratories**.
+4. Search for **Moon Migration Audit** by **Moon Laboratories**.
 5. Select **Install**.
 6. Restart IntelliJ IDEA if it asks you to restart.
 
-To confirm the installation, select **Plugins > Installed**. Make sure that **Migration Guard** is enabled.
+To confirm the installation, select **Plugins > Installed**. Make sure that **Moon Migration Audit** is enabled.
 
-![Migration Guard enabled in the Installed plugins list.](images/installed.jpg)
+![Moon Migration Audit enabled in the Installed plugins list.](images/installed.jpg)
 
-*Figure 1. Migration Guard is installed and enabled.*
+*Figure 1. Moon Migration Audit is installed and enabled.*
 
 For help with installation, see the [IntelliJ IDEA plugin guide](https://www.jetbrains.com/help/idea/managing-plugins.html).
 
 ## Scan your migrations
 
 1. Open your project in IntelliJ IDEA.
-2. Select **View > Tool Windows > Migration Guard**.
+2. Select **View > Tool Windows > Moon Migration Audit**.
 3. Select **Scan project**.
 4. Wait for the scan to finish.
 5. Read the finding count and the findings in the list.
 
 The plugin scans versioned Flyway SQL files that use the default `V` prefix, `__` separator, and `.sql` suffix. For example, it scans `V2__add_accounts.sql`. It does not scan repeatable files such as `R__refresh_view.sql`. If your project changes these filename parts, the plugin does not find those files.
 
-![Migration Guard showing a Free scan result.](images/scan-results.jpg)
+![Moon Migration Audit showing a Free scan result.](images/scan-results.jpg)
 
 *Figure 2. The Free scan reports a column deletion in an example project. Your results depend on your SQL files.*
 
@@ -50,15 +50,15 @@ The plugin does not change your SQL files. It does not need a database connectio
 
 ## Activate a trial or a purchased subscription
 
-1. Select **Unlock Pro** in the Migration Guard tool window.
+1. Select **Unlock Pro** in the Moon Migration Audit tool window.
 2. In the JetBrains license window, sign in with your JetBrains Account.
-3. If you bought Pro, use the account that you used for the purchase. Select the Migration Guard license.
+3. If you bought Pro, use the account that you used for the purchase. Select the Moon Migration Audit license.
 4. If you want a trial, start it when JetBrains offers it in the license window.
 5. Return to the tool window and select **Scan project** again.
 
-When sales are available, you can buy Pro on the [Migration Guard Marketplace page](https://plugins.jetbrains.com/plugin/34848-moon-migration-audit). JetBrains manages the purchase and subscription.
+When sales are available, you can buy Pro on the [Moon Migration Audit Marketplace page](https://plugins.jetbrains.com/plugin/34848-moon-migration-audit). JetBrains manages the purchase and subscription.
 
-If Pro does not activate, open **Help > Register** in IntelliJ IDEA. Sign in with the account that has the license. Refresh the license list, activate Migration Guard, and scan again. See the [JetBrains license guide](https://www.jetbrains.com/help/idea/register.html) for more help.
+If Pro does not activate, open **Help > Register** in IntelliJ IDEA. Sign in with the account that has the license. Refresh the license list, activate Moon Migration Audit, and scan again. See the [JetBrains license guide](https://www.jetbrains.com/help/idea/register.html) for more help.
 
 If your trial or subscription ends, you can continue to use the Free checks.
 
