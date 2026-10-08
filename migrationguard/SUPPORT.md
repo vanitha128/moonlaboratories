@@ -1,9 +1,9 @@
-# Moon Migration Audit Support Policy
+# Flyway Migration Guard Support Policy
 
 Last updated: 2026-10-07
 
 This Support Policy describes how Moon Laboratories provides support for the
-Moon Migration Audit plugin.
+Flyway Migration Guard plugin.
 
 ## 1. Support Channels
 
@@ -62,7 +62,7 @@ These are targets, not guaranteed service levels.
 To speed resolution, include:
 
 - JetBrains IDE name and version;
-- Moon Migration Audit version;
+- Flyway Migration Guard version;
 - operating system and version;
 - exact steps to reproduce;
 - expected behavior vs actual behavior;

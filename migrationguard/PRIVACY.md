@@ -1,18 +1,18 @@
-# Moon Migration Audit Privacy Policy
+# Flyway Migration Guard Privacy Policy
 
 Last updated: 2026-10-07
 
 This Privacy Policy explains how Moon Laboratories ("we", "us", "our") handles data
-when you use the Moon Migration Audit plugin ("Plugin").
+when you use the Flyway Migration Guard plugin ("Plugin").
 
 ## 1. Scope
 
-This policy applies to the Moon Migration Audit JetBrains plugin and related support
+This policy applies to the Flyway Migration Guard JetBrains plugin and related support
 interactions.
 
 ## 2. Data Processing Overview
 
-Moon Migration Audit is designed to process project source files and configuration
+Flyway Migration Guard is designed to process project source files and configuration
 primarily within your local IDE environment.
 
 - We do not operate a backend that ingests your source code by default.
@@ -20,7 +20,7 @@ primarily within your local IDE environment.
 
 ## 3. Data Processed by the Plugin
 
-Moon Migration Audit reads versioned Flyway SQL files in the project you scan. It
+Flyway Migration Guard reads versioned Flyway SQL files in the project you scan. It
 processes file paths and SQL text in the IDE to identify potential migration
 risks and show findings. It does not ask for database credentials or create a
 Moon Laboratories account.
@@ -30,7 +30,7 @@ Moon Laboratories account.
 The current scanner does not send project files, SQL text, or findings over the
 network. JetBrains may handle plugin download, updates, licensing, and billing
 under its own terms and privacy policy. The IDE may use JetBrains platform
-services independently of Moon Migration Audit.
+services independently of Flyway Migration Guard.
 
 We do not sell personal data.
 
@@ -77,7 +77,7 @@ transmission is completely secure.
 
 ## 9. Children's Privacy
 
-Moon Migration Audit is intended for professional developers and is not directed to
+Flyway Migration Guard is intended for professional developers and is not directed to
 children.
 
 ## 10. International Use
