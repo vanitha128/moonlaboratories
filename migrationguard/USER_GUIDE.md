@@ -19,9 +19,11 @@ Flyway Migration Guard checks PostgreSQL Flyway SQL migrations in your open proj
 
 To confirm the installation, select **Plugins > Installed**. Make sure that **Flyway Migration Guard** is enabled.
 
-![Flyway Migration Guard enabled in the Installed plugins list.](images/installed.jpg)
+The screenshots below show an earlier version under the former name, **Moon Migration Audit**. The controls work the same way in Flyway Migration Guard.
 
-*Figure 1. Flyway Migration Guard is installed and enabled.*
+![Earlier version of the plugin enabled in the Installed plugins list.](images/installed.jpg)
+
+*Figure 1. The earlier plugin version is installed and enabled.*
 
 For help with installation, see the [IntelliJ IDEA plugin guide](https://www.jetbrains.com/help/idea/managing-plugins.html).
 
@@ -35,7 +37,7 @@ For help with installation, see the [IntelliJ IDEA plugin guide](https://www.jet
 
 The plugin scans versioned Flyway SQL files that use the default `V` prefix, `__` separator, and `.sql` suffix. For example, it scans `V2__add_accounts.sql`. It does not scan repeatable files such as `R__refresh_view.sql`. If your project changes these filename parts, the plugin does not find those files.
 
-![Flyway Migration Guard showing a Free scan result.](images/scan-results.jpg)
+![Earlier version of the plugin showing a Free scan result.](images/scan-results.jpg)
 
 *Figure 2. The Free scan reports a column deletion in an example project. Your results depend on your SQL files.*
 
