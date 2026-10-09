@@ -121,3 +121,9 @@ For example, the expression `myClient\.isEnabled\(["']([^"']+)["']\)` captures `
 For help, use the [support form](https://product.moonlaboratories.com/support). Include the IDE version, plugin version, operating system, and steps to reproduce the issue. Remove credentials from screenshots and logs before you send them.
 
 Read the [Support Policy](SUPPORT.md), [Privacy Policy](PRIVACY.md), and [License](LICENSE).
+
+## Product provider
+
+MOON LABORATORIES PTY LTD provides FeatureFlagPro under the Moon Laboratories
+brand. The company is registered in New South Wales, Australia (ACN 703 101
+384; ABN 45 703 101 384).

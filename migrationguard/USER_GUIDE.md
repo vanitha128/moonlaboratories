@@ -102,3 +102,9 @@ A scan with no findings does not prove that a migration is safe. The plugin chec
 The plugin reads SQL files on your computer. It does not connect to a database or upload your SQL.
 
 For help with a scan, license, or subscription, see [Support](SUPPORT.md). Read the [Privacy Policy](PRIVACY.md) and [License](LICENSE) for more information.
+
+## Product provider
+
+MOON LABORATORIES PTY LTD provides Flyway Migration Guard under the Moon
+Laboratories brand. The company is registered in New South Wales, Australia
+(ACN 703 101 384; ABN 45 703 101 384).
