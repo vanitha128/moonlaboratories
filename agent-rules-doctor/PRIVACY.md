@@ -4,11 +4,10 @@ Draft for review before Marketplace publication.
 
 Last updated: 2026-10-09
 
-Moon Laboratories is operated by MOON LABORATORIES PTY LTD (ACN 703 101 384;
-ABN 45 703 101 384), registered in New South Wales, Australia.
-
-This Privacy Policy explains how MOON LABORATORIES PTY LTD ("we", "us", "our") handles data
-when you use the AgentRules Doctor plugin ("Plugin").
+This Privacy Policy explains how MOON LABORATORIES PTY LTD, trading as
+Moon Laboratories ("we", "us", "our"), handles data when you use the
+AgentRules Doctor plugin ("Plugin"). Our ACN is 703 101 384. Our ABN is
+45 703 101 384.
 
 ## 1. Scope
 
@@ -122,4 +121,7 @@ published with the Plugin materials or product documentation.
 For privacy questions or requests, contact:
 
 - Raise a support request at https://product.moonlaboratories.com/support
-- Legal entity: MOON LABORATORIES PTY LTD (ACN 703 101 384; ABN 45 703 101 384)
+- Vendor: MOON LABORATORIES PTY LTD (Moon Laboratories)
+- ACN: 703 101 384
+- ABN: 45 703 101 384
+- Email: karuppaiah.al@gmail.com
