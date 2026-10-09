@@ -1,6 +1,6 @@
 # AgentRules Doctor User Guide
 
-Last update: 2026-10-08
+Last update: 2026-10-09
 
 This guide is for people who install AgentRules Doctor from JetBrains Marketplace or buy Pro. The plugin checks agent instruction files in an open project. It shows results in the **Agent Rules** tool window.
 
@@ -189,3 +189,12 @@ If the problem continues, use the [support page](SUPPORT.md). Find the plugin ve
 The scan runs on your computer. The plugin does not send instruction text or findings to Moon Laboratories. See the [privacy policy](PRIVACY.md).
 
 Use the [support page](SUPPORT.md) for product help. JetBrains Marketplace manages purchases and license delivery.
+
+## Product provider
+
+MOON LABORATORIES PTY LTD provides AgentRules Doctor. The brand name is
+Moon Laboratories. The company is registered in New South Wales, Australia.
+
+- ACN: 703 101 384.
+- ABN: 45 703 101 384.
+- Email: karuppaiah.al@gmail.com.
