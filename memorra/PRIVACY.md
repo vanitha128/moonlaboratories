@@ -1,8 +1,8 @@
 # Privacy Policy
 
-Last updated: May 2026
+Last updated: October 9, 2026
 
-Memorra (“we”, “our”, or “us”) respects your privacy and is committed to protecting your information.
+Memorra is a product of MOON LABORATORIES PTY LTD (ACN 703 101 384; ABN 45 703 101 384), registered in New South Wales, Australia. In this policy, “we”, “our”, and “us” refer to the company.
 
 This Privacy Policy explains how Memorra handles information when you use our mobile application and related services.
 
@@ -139,5 +139,6 @@ Continued use of Memorra after updates constitutes acceptance of the revised pol
 
 If you have questions about this Privacy Policy, you may contact:
 
-Moon Laboratories  
+MOON LABORATORIES PTY LTD (ACN 703 101 384; ABN 45 703 101 384)
+
 Email: https://product.moonlaboratories.com/support

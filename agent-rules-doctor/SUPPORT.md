@@ -2,9 +2,12 @@
 
 Draft for review before Marketplace publication.
 
-Last updated: 2026-10-07
+Last updated: 2026-10-09
 
-This Support Policy describes how Moon Laboratories provides support for the
+Moon Laboratories is operated by MOON LABORATORIES PTY LTD (ACN 703 101 384;
+ABN 45 703 101 384), registered in New South Wales, Australia.
+
+This Support Policy describes how MOON LABORATORIES PTY LTD provides support for the
 AgentRules Doctor plugin.
 
 ## 1. Support Channels
