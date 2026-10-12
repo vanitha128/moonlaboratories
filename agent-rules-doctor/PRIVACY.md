@@ -1,8 +1,6 @@
 # AgentRules Doctor Privacy Policy
 
-Draft for review before Marketplace publication.
-
-Last updated: 2026-10-09
+Last updated: 2026-10-13
 
 This Privacy Policy explains how MOON LABORATORIES PTY LTD, trading as
 Moon Laboratories ("we", "us", "our"), handles data when you use the

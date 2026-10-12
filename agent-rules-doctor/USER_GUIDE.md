@@ -4,7 +4,7 @@ Last update: 2026-10-09
 
 This guide is for people who install AgentRules Doctor from JetBrains Marketplace or buy Pro. The plugin checks agent instruction files in an open project. It shows results in the **Agent Rules** tool window.
 
-AgentRules Doctor is under review in JetBrains Marketplace. Public installation and Pro purchases are not available yet. Use the installation and purchase steps when the plugin is released.
+AgentRules Doctor has Marketplace approval. The public release is in preparation. Use the installation and purchase steps when the plugin is available.
 
 ## Install the plugin
 

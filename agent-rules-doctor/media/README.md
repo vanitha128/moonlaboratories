@@ -10,4 +10,4 @@ Captured on 2026-10-08 with AgentRules Doctor 2026.1.0 installed in IntelliJ IDE
 
 The screenshots contain no private instruction text. The IDE's Trial badge refers to IntelliJ IDEA, not an activated AgentRules Doctor Pro trial. Genuine plugin trial and paid license validation remains pending.
 
-All five images were uploaded and saved in the Marketplace gallery on 2026-10-08. The listing remains hidden and under review.
+All five images were uploaded and saved in the Marketplace gallery on 2026-10-08. Version 2026.1.0 has Marketplace approval. The listing remains hidden while release validation is completed.

@@ -1,8 +1,6 @@
 # AgentRules Doctor Support Policy
 
-Draft for review before Marketplace publication.
-
-Last updated: 2026-10-09
+Last updated: 2026-10-13
 
 This Support Policy describes how MOON LABORATORIES PTY LTD, trading as
 Moon Laboratories, provides support for the AgentRules Doctor plugin.
